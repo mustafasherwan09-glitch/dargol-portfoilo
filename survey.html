@@ -1,0 +1,360 @@
+﻿<!DOCTYPE html>
+
+<html dir="ltr" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>App Survey – Dargol Logistics</title>
+<meta content="Share your feedback about the Dargol Logistics app. Help us improve our services and features." name="description"/>
+<link href="dargollogistics.PNG" rel="icon" type="image/png"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;family=Outfit:wght@300;400;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+</link></link></head>
+<body class="page-survey" data-lang="en">
+<div class="side-overlay" id="sideOverlay" onclick="closeSideMenu()"></div>
+<aside class="side-menu" id="sideMenu">
+<div class="side-menu__header">
+<img alt="Dargol Logistics" class="side-menu__logo" src="images/dargollogistics.PNG"/>
+<button class="side-menu__close" onclick="closeSideMenu()"><i class="fa-solid fa-xmark"></i></button>
+</div>
+<nav class="side-menu__nav">
+<a class="side-nav-link" data-i18n="nav_home" href="index.html"><i class="fa-solid fa-house"></i><span>Home</span></a>
+<a class="side-nav-link" data-i18n="nav_about" href="about.html"><i class="fa-solid fa-building"></i><span>About Us</span></a>
+<a class="side-nav-link" data-i18n="nav_services" href="services.html"><i class="fa-solid fa-truck-fast"></i><span>Services</span></a>
+<a class="side-nav-link" data-i18n="nav_download" href="download.html"><i class="fa-solid fa-mobile-screen"></i><span>Download App</span></a>
+<a class="side-nav-link" data-i18n="nav_blog" href="blog.html"><i class="fa-solid fa-newspaper"></i><span>Blog</span></a>
+<a class="side-nav-link" data-i18n="nav_contact" href="contact.html"><i class="fa-solid fa-envelope"></i><span>Get In Touch</span></a>
+<a class="side-nav-link active" data-i18n="nav_survey" href="survey.html"><i class="fa-solid fa-clipboard-list"></i><span>App Survey</span></a>
+<a class="side-nav-link" data-i18n="nav_privacy" href="privacy.html"><i class="fa-solid fa-shield-halved"></i><span>Privacy Policy</span></a>
+</nav>
+<div class="side-menu__contacts">
+<a class="wa-link" href="https://wa.me/971504157900" target="_blank"><i class="fa-brands fa-whatsapp"></i> +971 50 415 7900</a>
+<a class="wa-link" href="https://wa.me/9647513077900" target="_blank"><i class="fa-brands fa-whatsapp"></i> +964 751 307 7900</a>
+</div>
+    <!-- Language Switcher — bottom of side menu, text-only -->
+    <div class="lang-switcher" id="sideLangSwitcher">
+      <p class="lang-switcher__label" data-i18n="change_language">Language</p>
+      <div class="lang-switcher__buttons">
+        <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+        <button class="lang-btn" data-lang="ku" onclick="switchLang('ku')">کوردی</button>
+        <button class="lang-btn" data-lang="ar" onclick="switchLang('ar')">العربية</button>
+      </div>
+    </div>
+</aside>
+<header class="navbar" id="mainNavbar">
+<div class="navbar__inner container">
+<a class="navbar__brand" href="index.html">
+<img alt="Dargol Logistics" class="navbar__logo" src="images/dargollogistics.PNG"/>
+<span class="navbar__name">DARGOL <span>LOGISTICS</span></span>
+</a>
+<nav class="navbar__links">
+<a class="nav-link" data-i18n="nav_home" href="index.html">Home</a>
+<a class="nav-link" data-i18n="nav_about" href="about.html">About</a>
+<a class="nav-link" data-i18n="nav_services" href="services.html">Services</a>
+<a class="nav-link" data-i18n="nav_download" href="download.html">Download App</a>
+<a class="nav-link" data-i18n="nav_blog" href="blog.html">Blog</a>
+<a class="nav-link" data-i18n="nav_contact" href="contact.html">Contact</a>
+</nav>
+<div class="navbar__actions">
+<a class="btn btn--primary btn--sm" data-i18n="nav_get_app" href="download.html"><i class="fa-solid fa-mobile-screen"></i> Get the App</a>
+        <div class="lang-dropdown" id="langDropdown">
+          <button class="lang-dropdown__toggle" id="langDropdownToggle" onclick="toggleLangDropdown()" aria-label="Change language">
+            <span id="langDropdownLabel">English</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="lang-dropdown__menu" id="langDropdownMenu">
+            <button class="lang-dropdown__item active" data-lang="en" onclick="switchLang('en');closeLangDropdown()">English</button>
+            <button class="lang-dropdown__item" data-lang="ku" onclick="switchLang('ku');closeLangDropdown()">کوردی</button>
+            <button class="lang-dropdown__item" data-lang="ar" onclick="switchLang('ar');closeLangDropdown()">العربية</button>
+          </div>
+        </div>
+<button class="hamburger" onclick="openSideMenu()"><span></span><span></span><span></span></button>
+</div>
+</div>
+</header>
+<!-- Page Hero -->
+<section class="page-hero">
+<div class="container page-hero__content">
+<div class="page-hero__tag"><i class="fa-solid fa-mobile-screen"></i> <span data-i18n="survey_hero_tag">Dargol App Survey</span></div>
+<h1 class="page-hero__title" data-i18n="survey_hero_title">Help Us Build Better</h1>
+<p class="page-hero__subtitle" data-i18n="survey_hero_subtitle">Share your experience and feature requests for the Dargol Logistics app. Your feedback shapes our future.</p>
+</div>
+</section>
+<!-- Survey Section -->
+<section class="section" style="background: var(--off-white);">
+<div class="container">
+<div class="survey-container">
+<!-- Progress Indicator -->
+<div class="survey-progress">
+<div class="survey-step-indicator" style="display:flex; align-items:center; gap:0;">
+<div class="step-bubble active" id="bubble1" style="position:relative;">
+              1
+              <span class="step-label" data-i18n="survey_step1">Your Info</span>
+</div>
+<div class="step-line" id="line1"></div>
+<div class="step-bubble" id="bubble2" style="position:relative;">
+              2
+              <span class="step-label" data-i18n="survey_step2">Experience</span>
+</div>
+<div class="step-line" id="line2"></div>
+<div class="step-bubble" id="bubble3" style="position:relative;">
+              3
+              <span class="step-label" data-i18n="survey_step3">Features</span>
+</div>
+<div class="step-line" id="line3"></div>
+<div class="step-bubble" id="bubble4" style="position:relative;">
+              4
+              <span class="step-label" data-i18n="survey_step4">Feedback</span>
+</div>
+</div>
+</div>
+<!-- STEP 1: User Info -->
+<div class="survey-panel is-active" id="surveyStep1">
+<div class="survey-panel__title" data-i18n="surv1_title">Tell Us About Yourself</div>
+<div class="survey-panel__subtitle" data-i18n="surv1_desc">Help us understand who our users are so we can serve you better.</div>
+<div class="form-row">
+<div class="form-group">
+<label for="sName" data-i18n="surv1_lbl_name">Full Name</label>
+<input id="sName" placeholder="Your name..." data-i18n-placeholder="surv1_plc_name" type="text"/>
+</div>
+<div class="form-group">
+<label for="sEmail" data-i18n="surv1_lbl_email">Email Address</label>
+<input id="sEmail" placeholder="your@email.com" data-i18n-placeholder="surv1_plc_email" type="email"/>
+</div>
+</div>
+<div class="form-group">
+<label for="sRole" data-i18n="surv1_lbl_role">I am a...</label>
+<select id="sRole">
+<option value="" data-i18n="surv1_opt1">Select your role</option>
+<option data-i18n="surv1_opt2">Regular Customer (Dubai → Erbil)</option>
+<option data-i18n="surv1_opt3">Business / Commercial Importer</option>
+<option data-i18n="surv1_opt4">Shein Shopper</option>
+<option data-i18n="surv1_opt5">Auto Parts Dealer</option>
+<option data-i18n="surv1_opt6">Logistics Professional</option>
+<option data-i18n="surv1_opt7">Other</option>
+</select>
+</div>
+<div class="form-group">
+<label data-i18n="surv1_lbl_freq">How often do you use Dargol Logistics?</label>
+<div class="checkbox-group" style="flex-direction:row; flex-wrap:wrap;">
+<label class="checkbox-item" style="flex:1; min-width:140px;">
+<input name="frequency" type="radio" value="weekly"/> <span data-i18n="surv1_freq1">Weekly</span>
+</label>
+<label class="checkbox-item" style="flex:1; min-width:140px;">
+<input name="frequency" type="radio" value="monthly"/> <span data-i18n="surv1_freq2">Monthly</span>
+</label>
+<label class="checkbox-item" style="flex:1; min-width:140px;">
+<input name="frequency" type="radio" value="occasionally"/> <span data-i18n="surv1_freq3">Occasionally</span>
+</label>
+<label class="checkbox-item" style="flex:1; min-width:140px;">
+<input name="frequency" type="radio" value="first"/> <span data-i18n="surv1_freq4">First Time</span>
+</label>
+</div>
+</div>
+<div class="survey-nav">
+<span style="font-size:0.85rem; color:var(--gray-400);" data-i18n="surv_step1_txt">Step 1 of 4</span>
+<button class="btn btn--primary" onclick="nextStep()"><span data-i18n="surv_next">Next</span> <i class="fa-solid fa-arrow-right"></i></button>
+</div>
+</div>
+<!-- STEP 2: Experience -->
+<div class="survey-panel" id="surveyStep2">
+<div class="survey-panel__title" data-i18n="surv2_title">Rate Your Experience</div>
+<div class="survey-panel__subtitle" data-i18n="surv2_desc">How satisfied are you with our current services?</div>
+<div class="form-group">
+<label data-i18n="surv2_lbl1">Overall Service Satisfaction (1 = Poor, 10 = Excellent)</label>
+<div class="rating-group">
+<button class="rating-btn" onclick="selectRating(this)">1</button>
+<button class="rating-btn" onclick="selectRating(this)">2</button>
+<button class="rating-btn" onclick="selectRating(this)">3</button>
+<button class="rating-btn" onclick="selectRating(this)">4</button>
+<button class="rating-btn" onclick="selectRating(this)">5</button>
+<button class="rating-btn" onclick="selectRating(this)">6</button>
+<button class="rating-btn" onclick="selectRating(this)">7</button>
+<button class="rating-btn" onclick="selectRating(this)">8</button>
+<button class="rating-btn" onclick="selectRating(this)">9</button>
+<button class="rating-btn" onclick="selectRating(this)">10</button>
+</div>
+</div>
+<div class="form-group">
+<label data-i18n="surv2_lbl2">Delivery Speed Rating</label>
+<div class="rating-group">
+<button class="rating-btn" onclick="selectRating(this)">⭐</button>
+<button class="rating-btn" onclick="selectRating(this)">⭐⭐</button>
+<button class="rating-btn" onclick="selectRating(this)">⭐⭐⭐</button>
+<button class="rating-btn" onclick="selectRating(this)">⭐⭐⭐⭐</button>
+<button class="rating-btn" onclick="selectRating(this)">⭐⭐⭐⭐⭐</button>
+</div>
+</div>
+<div class="form-group">
+<label data-i18n="surv2_lbl3">Customer Support Rating</label>
+<div class="rating-group">
+<button class="rating-btn" onclick="selectRating(this)">⭐</button>
+<button class="rating-btn" onclick="selectRating(this)">⭐⭐</button>
+<button class="rating-btn" onclick="selectRating(this)">⭐⭐⭐</button>
+<button class="rating-btn" onclick="selectRating(this)">⭐⭐⭐⭐</button>
+<button class="rating-btn" onclick="selectRating(this)">⭐⭐⭐⭐⭐</button>
+</div>
+</div>
+<div class="form-group">
+<label data-i18n="surv2_lbl4">What aspect of Dargol do you value most?</label>
+<div class="checkbox-group">
+<label class="checkbox-item"><input type="checkbox"/> <span data-i18n="surv2_val1">Speed of Delivery</span></label>
+<label class="checkbox-item"><input type="checkbox"/> <span data-i18n="surv2_val2">Competitive Pricing ($1.25/kg)</span></label>
+<label class="checkbox-item"><input type="checkbox"/> <span data-i18n="surv2_val3">Real-Time Tracking</span></label>
+<label class="checkbox-item"><input type="checkbox"/> <span data-i18n="surv2_val4">WhatsApp Customer Support</span></label>
+<label class="checkbox-item"><input type="checkbox"/> <span data-i18n="surv2_val5">Safe &amp; Insured Cargo</span></label>
+</div>
+</div>
+<div class="survey-nav">
+<button class="btn btn--glass" onclick="prevStep()" style="background:var(--gray-100); color:var(--gray-600); border:none;">
+<i class="fa-solid fa-arrow-left"></i> <span data-i18n="surv_back">Back</span>
+            </button>
+<span style="font-size:0.85rem; color:var(--gray-400);" data-i18n="surv_step2_txt">Step 2 of 4</span>
+<button class="btn btn--primary" onclick="nextStep()"><span data-i18n="surv_next">Next</span> <i class="fa-solid fa-arrow-right"></i></button>
+</div>
+</div>
+<!-- STEP 3: App Features -->
+<div class="survey-panel" id="surveyStep3">
+<div class="survey-panel__title" data-i18n="surv3_title">App Feature Requests</div>
+<div class="survey-panel__subtitle" data-i18n="surv3_desc">What features would you like to see in the Dargol Logistics mobile app?</div>
+<div class="form-group">
+<label data-i18n="surv3_lbl1">Which features matter most to you? (Select all that apply)</label>
+<div class="checkbox-group">
+<label class="checkbox-item"><input checked="" type="checkbox"/> <span data-i18n="surv3_feat1">📍 Live GPS tracking of my shipment</span></label>
+<label class="checkbox-item"><input type="checkbox"/> <span data-i18n="surv3_feat2">🔔 Push notifications for every status update</span></label>
+<label class="checkbox-item"><input checked="" type="checkbox"/> <span data-i18n="surv3_feat3">📸 Photo proof of delivery</span></label>
+<label class="checkbox-item"><input type="checkbox"/> <span data-i18n="surv3_feat4">💬 In-app chat with Dargol team</span></label>
+<label class="checkbox-item"><input type="checkbox"/> <span data-i18n="surv3_feat5">💳 Online payment &amp; invoice management</span></label>
+<label class="checkbox-item"><input type="checkbox"/> <span data-i18n="surv3_feat6">📦 Multi-package tracking dashboard</span></label>
+<label class="checkbox-item"><input type="checkbox"/> <span data-i18n="surv3_feat7">🧾 Digital Bill of Lading &amp; customs docs</span></label>
+<label class="checkbox-item"><input type="checkbox"/> <span data-i18n="surv3_feat8">🌐 Kurdish/Arabic language support</span></label>
+<label class="checkbox-item"><input type="checkbox"/> <span data-i18n="surv3_feat9">📊 Shipping history &amp; analytics</span></label>
+<label class="checkbox-item"><input type="checkbox"/> <span data-i18n="surv3_feat10">🛒 Direct Shein order integration</span></label>
+</div>
+</div>
+<div class="form-group">
+<label for="sDevicePref" data-i18n="surv3_lbl2">Preferred Platform</label>
+<select id="sDevicePref">
+<option value="" data-i18n="surv3_opt1">Choose platform...</option>
+<option>iOS (iPhone)</option>
+<option>Android</option>
+<option data-i18n="surv3_opt2">Both iOS and Android</option>
+<option data-i18n="surv3_opt3">Web App (Browser Only)</option>
+</select>
+</div>
+<div class="survey-nav">
+<button class="btn btn--glass" onclick="prevStep()" style="background:var(--gray-100); color:var(--gray-600); border:none;">
+<i class="fa-solid fa-arrow-left"></i> <span data-i18n="surv_back">Back</span>
+            </button>
+<span style="font-size:0.85rem; color:var(--gray-400);" data-i18n="surv_step3_txt">Step 3 of 4</span>
+<button class="btn btn--primary" onclick="nextStep()"><span data-i18n="surv_next">Next</span> <i class="fa-solid fa-arrow-right"></i></button>
+</div>
+</div>
+<!-- STEP 4: Open Feedback -->
+<div class="survey-panel" id="surveyStep4">
+<div class="survey-panel__title" data-i18n="surv4_title">Final Thoughts</div>
+<div class="survey-panel__subtitle" data-i18n="surv4_desc">Any additional comments or suggestions for Dargol Logistics?</div>
+<div class="form-group">
+<label for="sImprove" data-i18n="surv4_lbl1">What could we improve?</label>
+<textarea id="sImprove" data-i18n-placeholder="surv4_plc1" placeholder="Tell us honestly — what's not working well and how can we do better..." style="min-height: 110px;"></textarea>
+</div>
+<div class="form-group">
+<label for="sFeatureIdea" data-i18n="surv4_lbl2">Your Dream Feature</label>
+<textarea id="sFeatureIdea" data-i18n-placeholder="surv4_plc2" placeholder="Describe a feature that would completely change how you use Dargol..." style="min-height: 90px;"></textarea>
+</div>
+<div class="form-group">
+<label data-i18n="surv4_lbl3">Would you recommend Dargol Logistics?</label>
+<div class="checkbox-group" style="flex-direction:row; flex-wrap:wrap;">
+<label class="checkbox-item" style="flex:1; min-width:140px;">
+<input name="recommend" type="radio" value="definitely"/> <span data-i18n="surv4_rec1">✅ Definitely</span>
+</label>
+<label class="checkbox-item" style="flex:1; min-width:140px;">
+<input name="recommend" type="radio" value="probably"/> <span data-i18n="surv4_rec2">🤔 Probably</span>
+</label>
+<label class="checkbox-item" style="flex:1; min-width:140px;">
+<input name="recommend" type="radio" value="maybe"/> <span data-i18n="surv4_rec3">🫤 Maybe</span>
+</label>
+<label class="checkbox-item" style="flex:1; min-width:140px;">
+<input name="recommend" type="radio" value="no"/> <span data-i18n="surv4_rec4">❌ No</span>
+</label>
+</div>
+</div>
+<div class="survey-nav">
+<button class="btn btn--glass" onclick="prevStep()" style="background:var(--gray-100); color:var(--gray-600); border:none;">
+<i class="fa-solid fa-arrow-left"></i> <span data-i18n="surv_back">Back</span>
+            </button>
+<button class="btn btn--primary btn--lg" onclick="submitSurvey()">
+<i class="fa-solid fa-paper-plane"></i> <span data-i18n="surv_submit">Submit Feedback</span>
+            </button>
+</div>
+</div>
+<!-- Success State (hidden until submitted) -->
+<div id="surveySuccess" style="display:none; text-align:center; padding: 80px 40px; background:var(--white); border:1px solid var(--gray-200); border-radius:var(--radius-2xl); box-shadow:var(--shadow-lg);">
+<div style="width:80px; height:80px; border-radius:50%; background:linear-gradient(135deg, var(--purple-500), var(--cyan-500)); display:flex; align-items:center; justify-content:center; margin:0 auto 24px; font-size:2rem; color:var(--white);">
+<i class="fa-solid fa-check"></i>
+</div>
+<h2 style="font-family:var(--font-display); font-size:2rem; font-weight:800; color:var(--gray-900); margin-bottom:12px;">Thank You! 🎉</h2>
+<p style="font-size:1rem; color:var(--gray-500); max-width:480px; margin:0 auto 32px; line-height:1.7;">
+            Your feedback has been submitted successfully. The Dargol Logistics team will review your responses and use them to improve our app and services.
+          </p>
+<div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap;">
+<a class="btn btn--primary btn--lg" href="index.html">Back to Home</a>
+<a class="btn btn--glass btn--lg" href="tracking.html" style="background:var(--gray-100); color:var(--gray-700); border:1px solid var(--gray-200);">
+              Track a Shipment
+            </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<footer class="footer">
+<div class="footer__main container">
+<div class="footer__brand">
+<img alt="Dargol Logistics" class="footer__logo" src="images/dargollogistics.PNG"/>
+<p data-i18n="footer_about">Your trusted logistics partner between the UAE and Iraq. Fast, safe, and reliable freight since 2017.</p>
+<div class="footer__socials">
+<a href="https://wa.me/971504157900" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+<a href="https://www.facebook.com/share/1GXfdihBxV/?mibextid=wwXIfr" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+<a href="https://www.instagram.com/dargollogistics?igsh=M21uc2piYWtsaDI0" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+</div>
+</div>
+<div class="footer__links">
+<h4 data-i18n="footer_quick">Quick Links</h4>
+<ul>
+<li><a data-i18n="nav_home" href="index.html">Home</a></li>
+<li><a data-i18n="nav_about" href="about.html">About Us</a></li>
+<li><a data-i18n="nav_services" href="services.html">Services</a></li>
+<li><a href="tracking.html"><i class="fa-solid fa-mobile-screen"></i> Get the App</a></li>
+<li><a data-i18n="nav_contact" href="contact.html">Contact</a></li>
+</ul>
+</div>
+<div class="footer__contact">
+<h4 data-i18n="footer_contact">Contact Us</h4>
+<div class="footer__contact-item"><i class="fa-solid fa-location-dot"></i><span data-i18n="footer_addr1">Dubai, UAE</span></div>
+<div class="footer__contact-item"><i class="fa-solid fa-location-dot"></i><span data-i18n="footer_addr2">Gazna Road, Erbil, Iraq</span></div>
+<a class="footer__contact-item footer__contact-item--link" href="tel:+971504157900"><i class="fa-solid fa-phone"></i><span>+971 50 415 7900</span></a>
+</div>
+</div>
+<div class="footer__bottom">
+<div class="container">
+<p>© 2026 Dargol Logistics. All rights reserved.</p>
+<div class="footer__bottom-links"><a href="privacy.html">Privacy Policy</a></div>
+</div>
+</div>
+</footer>
+<button class="back-to-top" id="backToTop" onclick="scrollToTop()"><i class="fa-solid fa-chevron-up"></i></button>
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+<script>
+    // Initialize survey steps
+    document.addEventListener('DOMContentLoaded', () => {
+      goToStep(1);
+    });
+  </script>
+</body>
+</html>
+
+

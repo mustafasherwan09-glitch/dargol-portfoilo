@@ -1,0 +1,563 @@
+﻿<!DOCTYPE html>
+
+<html dir="ltr" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Dargol Logistics – Dubai to Erbil Freight &amp; Cargo Specialists</title>
+  <meta
+    content="Dargol Logistics provides premium air, sea, land and freight services from Dubai (UAE) to Erbil (Iraq). Specializing in Shein deliveries, auto parts, and full container shipping."
+    name="description" />
+  <meta content="Dargol Logistics, Dubai Erbil freight, cargo shipping, air freight, land freight, Shein delivery Iraq"
+    name="keywords" />
+  <meta content="Dargol Logistics – Dubai to Erbil Freight Specialists" property="og:title" />
+  <meta
+    content="Fast, safe and reliable freight from Dubai to Erbil. Air, Sea &amp; Land Freight. Special Shein &amp; Auto Parts delivery."
+    property="og:description" />
+  <meta content="dargollogistics.PNG" property="og:image" />
+  <meta content="website" property="og:type" />
+  <link href="dargollogistics.PNG" rel="icon" type="image/png" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;family=Outfit:wght@300;400;600;700;800;900&amp;display=swap"
+    rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <!-- Main CSS -->
+  <link href="css/style.css" rel="stylesheet">
+  </link>
+  </link>
+</head>
+
+<body class="page-home" data-lang="en">
+  <!-- ═══════════════ SIDE MENU OVERLAY ═══════════════ -->
+  <div class="side-overlay" id="sideOverlay" onclick="closeSideMenu()"></div>
+  <!-- ═══════════════ SIDE MENU DRAWER ═══════════════ -->
+  <aside aria-label="Side navigation" class="side-menu" id="sideMenu">
+    <div class="side-menu__header">
+      <img alt="Dargol Logistics Logo" class="side-menu__logo" src="images/dargollogistics.PNG" />
+      <button aria-label="Close menu" class="side-menu__close" id="sideMenuClose" onclick="closeSideMenu()">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <nav class="side-menu__nav">
+      <a class="side-nav-link active" data-i18n="nav_home" href="index.html">
+        <i class="fa-solid fa-house"></i> <span>Home</span>
+      </a>
+      <a class="side-nav-link" data-i18n="nav_about" href="about.html">
+        <i class="fa-solid fa-building"></i> <span>About Us</span>
+      </a>
+      <a class="side-nav-link" data-i18n="nav_services" href="services.html">
+        <i class="fa-solid fa-truck-fast"></i> <span>Services</span>
+      </a>
+      <a class="side-nav-link" data-i18n="nav_download" href="download.html">
+        <i class="fa-solid fa-mobile-screen"></i> <span>Download App</span>
+      </a>
+      <a class="side-nav-link" data-i18n="nav_blog" href="blog.html">
+        <i class="fa-solid fa-newspaper"></i> <span>Blog</span>
+      </a>
+      <a class="side-nav-link" data-i18n="nav_contact" href="contact.html">
+        <i class="fa-solid fa-envelope"></i> <span>Get In Touch</span>
+      </a>
+      <a class="side-nav-link" data-i18n="nav_survey" href="survey.html">
+        <i class="fa-solid fa-clipboard-list"></i> <span>App Survey</span>
+      </a>
+      <a class="side-nav-link" data-i18n="nav_privacy" href="privacy.html">
+        <i class="fa-solid fa-shield-halved"></i> <span>Privacy Policy</span>
+      </a>
+    </nav>
+    <div class="side-menu__contacts">
+      <a class="wa-link" href="https://wa.me/971504157900" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i> +971 50 415 7900
+      </a>
+      <a class="wa-link" href="https://wa.me/9647513077900" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i> +964 751 307 7900
+      </a>
+    </div>
+    <!-- Language Switcher — bottom of side menu, text-only -->
+    <div class="lang-switcher" id="sideLangSwitcher">
+      <p class="lang-switcher__label" data-i18n="change_language">Language</p>
+      <div class="lang-switcher__buttons">
+        <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+        <button class="lang-btn" data-lang="ku" onclick="switchLang('ku')">کوردی</button>
+        <button class="lang-btn" data-lang="ar" onclick="switchLang('ar')">العربية</button>
+      </div>
+    </div>
+  </aside>
+  <!-- ═══════════════ TOP NAVIGATION ═══════════════ -->
+  <header class="navbar" id="mainNavbar">
+    <div class="navbar__inner container">
+      <a class="navbar__brand" href="index.html">
+        <img alt="Dargol Logistics" class="navbar__logo" src="images/dargollogistics.PNG" />
+        <span class="navbar__name">DARGOL <span>LOGISTICS</span></span>
+      </a>
+      <nav aria-label="Main navigation" class="navbar__links">
+        <a class="nav-link active" data-i18n="nav_home" href="index.html">Home</a>
+        <a class="nav-link" data-i18n="nav_about" href="about.html">About</a>
+        <a class="nav-link" data-i18n="nav_services" href="services.html">Services</a>
+        <a class="nav-link" data-i18n="nav_download" href="download.html">Download App</a>
+        <a class="nav-link" data-i18n="nav_blog" href="blog.html">Blog</a>
+        <a class="nav-link" data-i18n="nav_contact" href="contact.html">Contact</a>
+      </nav>
+      <div class="navbar__actions">
+        <a class="btn btn--primary btn--sm" data-i18n="nav_get_app" href="download.html"><i
+            class="fa-solid fa-mobile-screen"></i> Get the App</a>
+        <div class="lang-dropdown" id="langDropdown">
+          <button class="lang-dropdown__toggle" id="langDropdownToggle" onclick="toggleLangDropdown()" aria-label="Change language">
+            <span id="langDropdownLabel">English</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="lang-dropdown__menu" id="langDropdownMenu">
+            <button class="lang-dropdown__item active" data-lang="en" onclick="switchLang('en');closeLangDropdown()">English</button>
+            <button class="lang-dropdown__item" data-lang="ku" onclick="switchLang('ku');closeLangDropdown()">کوردی</button>
+            <button class="lang-dropdown__item" data-lang="ar" onclick="switchLang('ar');closeLangDropdown()">العربية</button>
+          </div>
+        </div>
+        <button aria-label="Open menu" class="hamburger" id="hamburgerBtn" onclick="openSideMenu()">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <!-- ═══════════════ HERO SECTION ═══════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <div class="hero__particles" id="heroParticles"></div>
+      <div class="hero__overlay"></div>
+      <img alt="Logistics background" class="hero__img" src="images/transport-logistics-products.jpg" />
+    </div>
+    <div class="hero__content container">
+      <div class="hero__badge animate-fadeInUp" style="--delay:0.1s">
+        <i class="fa-solid fa-circle-check"></i>
+        <span data-i18n="hero_badge">Built to Deliver.</span>
+      </div>
+      <h1 class="hero__title animate-fadeInUp" style="--delay:0.2s">
+        <span data-i18n="hero_title1">Moving Your Shipments</span><br />
+        <span class="hero__gradient-text" data-i18n="hero_title2">Faster Than Ever</span>
+      </h1>
+      <p class="hero__subtitle animate-fadeInUp" data-i18n="hero_subtitle" style="--delay:0.35s">
+        Premium air, sea &amp; land freight from <strong>Dubai, UAE</strong> to <strong>Erbil, Iraq</strong>.
+        Specialized Shein deliveries, auto parts transport &amp; full container shipping at just
+        <strong>$1.25/kg</strong>.
+      </p>
+      <div class="hero__ctas animate-fadeInUp" style="--delay:0.5s">
+        <a class="btn btn--primary btn--lg" data-i18n="hero_cta1" href="contact.html">
+          <i class="fa-solid fa-paper-plane"></i> Get a Quote
+        </a>
+        <a class="btn btn--glass btn--lg" data-i18n="hero_cta2" href="services.html">
+          <i class="fa-solid fa-arrow-right"></i> Our Services
+        </a>
+      </div>
+      <!-- Route Badge -->
+      <div class="route-badge animate-fadeInUp" style="--delay:0.65s">
+        <div class="route-badge__city">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Dubai, UAE</span>
+        </div>
+        <div class="route-badge__line">
+          <div class="route-badge__dots"></div>
+          <i class="fa-solid fa-plane route-badge__plane"></i>
+          <div class="route-badge__dots"></div>
+        </div>
+        <div class="route-badge__city">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Erbil, Iraq</span>
+        </div>
+      </div>
+    </div>
+    <!-- Scroll indicator -->
+    <div class="hero__scroll">
+      <div class="scroll-indicator"></div>
+    </div>
+  </section>
+  <!-- ═══════════════ APP DOWNLOAD BAR ═══════════════ -->
+  <section class="track-bar">
+    <div class="container">
+      <div class="track-bar__inner" style="gap: 24px;">
+        <div class="track-bar__icon" style="background: linear-gradient(135deg, var(--purple-600), var(--cyan-600));">
+          <i class="fa-solid fa-mobile-screen"></i>
+        </div>
+        <div class="track-bar__field">
+          <label>Track Your Shipments Live</label>
+          <span style="font-size:0.85rem; color:var(--gray-500);">Download the Dargol app — register, track &amp; manage
+            your freight in real time</span>
+        </div>
+        <div style="display:flex; gap:10px; flex-shrink:0; flex-wrap:wrap;">
+          <a class="btn btn--primary btn--sm" href="https://apps.apple.com/iq/app/dargol-logistics/id6765804673"
+            rel="noopener" style="background:#000; border-color:#000;" target="_blank">
+            <i class="fa-brands fa-apple"></i> App Store
+          </a>
+          <a class="btn btn--primary btn--sm"
+            href="https://play.google.com/store/apps/details?id=com.dargol.logistics&amp;hl=en" rel="noopener"
+            style="background:linear-gradient(135deg,#0f9d58,#0891b2); border:none;" target="_blank">
+            <i class="fa-brands fa-google-play"></i> Google Play
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ═══════════════ STATS SECTION ═══════════════ -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card animate-countUp">
+          <div class="stat-card__icon"><i class="fa-solid fa-box-open"></i></div>
+          <div class="stat-card__num" data-target="15000">0</div>
+          <div class="stat-card__label" data-i18n="stat1">Shipments Delivered</div>
+        </div>
+        <div class="stat-card animate-countUp">
+          <div class="stat-card__icon"><i class="fa-solid fa-users"></i></div>
+          <div class="stat-card__num" data-target="3200">0</div>
+          <div class="stat-card__label" data-i18n="stat2">Happy Clients</div>
+        </div>
+        <div class="stat-card animate-countUp">
+          <div class="stat-card__icon"><i class="fa-solid fa-truck-fast"></i></div>
+          <div class="stat-card__num" data-target="98">0</div>
+          <div class="stat-card__label" data-i18n="stat3">On-Time Delivery %</div>
+        </div>
+        <div class="stat-card animate-countUp">
+          <div class="stat-card__icon"><i class="fa-solid fa-clock"></i></div>
+          <div class="stat-card__num" data-target="7">0</div>
+          <div class="stat-card__label" data-i18n="stat4">Years of Experience</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ═══════════════ SERVICES HIGHLIGHTS ═══════════════ -->
+  <section class="services-section section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag" data-i18n="services_tag">What We Offer</div>
+        <h2 class="section-title" data-i18n="services_title">Our Core Services</h2>
+        <p class="section-subtitle" data-i18n="services_subtitle">End-to-end logistics solutions tailored for the
+          Dubai–Erbil corridor and beyond.</p>
+      </div>
+      <div class="services-grid">
+        <!-- Air Freight -->
+        <a class="service-card" href="services.html#air">
+          <div class="service-card__icon service-card__icon--air">
+            <i class="fa-solid fa-plane-departure"></i>
+          </div>
+          <h3 data-i18n="svc_air">Air Freight</h3>
+          <p data-i18n="svc_air_desc">Lightning-fast airfreight from Dubai International to Erbil. Priority handling,
+            temperature control, and express customs clearance.</p>
+          <span class="service-card__link">Learn more <i class="fa-solid fa-arrow-right"></i></span>
+        </a>
+        <!-- Land Freight -->
+        <a class="service-card service-card--featured" href="services.html#land">
+          <div class="service-card__badge" data-i18n="svc_featured">Most Popular</div>
+          <div class="service-card__icon service-card__icon--land">
+            <i class="fa-solid fa-truck-fast"></i>
+          </div>
+          <h3 data-i18n="svc_land">Land Freight</h3>
+          <p data-i18n="svc_land_desc">Direct road transport Dubai → Erbil. Starting at just <strong>$1.25/kg</strong>.
+            Specialized for Shein packages &amp; auto parts.</p>
+          <span class="service-card__link">Learn more <i class="fa-solid fa-arrow-right"></i></span>
+        </a>
+        <!-- Sea Freight -->
+        <a class="service-card" href="services.html#sea">
+          <div class="service-card__icon service-card__icon--sea">
+            <i class="fa-solid fa-ship"></i>
+          </div>
+          <h3 data-i18n="svc_sea">Sea Freight</h3>
+          <p data-i18n="svc_sea_desc">Full container (FCL) and less-than-container (LCL) shipping. Cost-effective for
+            large volumes and bulk cargo.</p>
+          <span class="service-card__link">Learn more <i class="fa-solid fa-arrow-right"></i></span>
+        </a>
+        <!-- General Cargo -->
+        <a class="service-card" href="services.html#cargo">
+          <div class="service-card__icon service-card__icon--cargo">
+            <i class="fa-solid fa-boxes-stacked"></i>
+          </div>
+          <h3 data-i18n="svc_cargo">General Cargo</h3>
+          <p data-i18n="svc_cargo_desc">Comprehensive freight solutions for any commodity. Warehousing, packing,
+            consolidation &amp; distribution all in one.</p>
+          <span class="service-card__link">Learn more <i class="fa-solid fa-arrow-right"></i></span>
+        </a>
+        <!-- Shein Special -->
+        <a class="service-card" href="services.html#shein">
+          <div class="service-card__icon service-card__icon--shein">
+            <i class="fa-solid fa-shirt"></i>
+          </div>
+          <h3 data-i18n="svc_shein">Shein Deliveries</h3>
+          <p data-i18n="svc_shein_desc">Official Shein order consolidation and delivery to Erbil. We handle customs,
+            duties, and last-mile delivery seamlessly.</p>
+          <span class="service-card__link">Learn more <i class="fa-solid fa-arrow-right"></i></span>
+        </a>
+        <!-- Auto Parts -->
+        <a class="service-card" href="services.html#autoparts">
+          <div class="service-card__icon service-card__icon--auto">
+            <i class="fa-solid fa-gear"></i>
+          </div>
+          <h3 data-i18n="svc_auto">Auto Parts Transport</h3>
+          <p data-i18n="svc_auto_desc">Safe, insured, and specialized transport for all automotive parts. Secure
+            packaging and real-time tracking included.</p>
+          <span class="service-card__link">Learn more <i class="fa-solid fa-arrow-right"></i></span>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- ═══════════════ WHY CHOOSE US ═══════════════ -->
+  <section class="why-section section">
+    <div class="why-section__bg"></div>
+    <div class="container">
+      <div class="why-grid">
+        <div class="why-image">
+          <div class="why-image__frame">
+            <img alt="Dargol Logistics Operations" src="images/transport-logistics-products.jpg" />
+            <div class="why-image__badge">
+              <i class="fa-solid fa-shield-halved"></i>
+              <div>
+                <strong>100%</strong>
+                <span data-i18n="why_badge">Cargo Insured</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="why-content">
+          <div class="section-tag" data-i18n="why_tag">Why Dargol?</div>
+          <h2 class="section-title" data-i18n="why_title">The Dubai–Erbil Route<br />Specialists</h2>
+          <p class="section-subtitle" data-i18n="why_desc">We are not just a shipping company — we are your trusted
+            logistics partner with deep knowledge of UAE–Iraq trade routes, customs procedures, and on-ground networks.
+          </p>
+          <div class="why-features">
+            <div class="why-feature">
+              <div class="why-feature__icon"><i class="fa-solid fa-bolt"></i></div>
+              <div>
+                <h4 data-i18n="why_f1">Express Delivery</h4>
+                <p data-i18n="why_f1_desc">Air freight arriving in as fast as 24–48 hours Dubai to Erbil.</p>
+              </div>
+            </div>
+            <div class="why-feature">
+              <div class="why-feature__icon"><i class="fa-solid fa-tag"></i></div>
+              <div>
+                <h4 data-i18n="why_f2">Best Rates</h4>
+                <p data-i18n="why_f2_desc">Competitive pricing starting at $1.25/kg for land freight with no hidden
+                  fees.</p>
+              </div>
+            </div>
+            <div class="why-feature">
+              <div class="why-feature__icon"><i class="fa-solid fa-headset"></i></div>
+              <div>
+                <h4 data-i18n="why_f3">24/7 Support</h4>
+                <p data-i18n="why_f3_desc">Dedicated WhatsApp support lines in Dubai and Erbil round the clock.</p>
+              </div>
+            </div>
+            <div class="why-feature">
+              <div class="why-feature__icon"><i class="fa-solid fa-file-shield"></i></div>
+              <div>
+                <h4 data-i18n="why_f4">Customs Expertise</h4>
+                <p data-i18n="why_f4_desc">Licensed customs brokers handling UAE and Iraq clearance swiftly.</p>
+              </div>
+            </div>
+          </div>
+          <a class="btn btn--primary" data-i18n="why_cta" href="about.html">
+            Learn More About Us <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ═══════════════ SPECIAL OFFERS ═══════════════ -->
+  <section class="offers-section section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag" data-i18n="offers_tag">Special Offers</div>
+        <h2 class="section-title" data-i18n="offers_title">Exclusive Deals for You</h2>
+      </div>
+      <div class="offers-grid">
+        <div class="offer-card offer-card--purple">
+          <div class="offer-card__icon"><i class="fa-solid fa-shirt"></i></div>
+          <div class="offer-card__content">
+            <h3 data-i18n="offer1_title">Shein Package Express</h3>
+            <p data-i18n="offer1_desc">Order from Shein, ship to our Dubai warehouse. We deliver to Erbil in record time
+              with full tracking.</p>
+            <a class="btn btn--white btn--sm" data-i18n="offer_cta" href="contact.html">Get Started</a>
+          </div>
+        </div>
+        <div class="offer-card offer-card--blue">
+          <div class="offer-card__icon"><i class="fa-solid fa-weight-hanging"></i></div>
+          <div class="offer-card__content">
+            <div class="offer-card__price">$1.25<span>/kg</span></div>
+            <h3 data-i18n="offer2_title">Land Freight Special Rate</h3>
+            <p data-i18n="offer2_desc">Unbeatable pricing for land freight on the Dubai → Erbil route. Volume discounts
+              available.</p>
+            <a class="btn btn--white btn--sm" data-i18n="offer_cta" href="contact.html">Get Started</a>
+          </div>
+        </div>
+        <div class="offer-card offer-card--teal">
+          <div class="offer-card__icon"><i class="fa-solid fa-gear"></i></div>
+          <div class="offer-card__content">
+            <h3 data-i18n="offer3_title">Auto Parts Premium Care</h3>
+            <p data-i18n="offer3_desc">Specialized packing, insurance, and safe delivery for all automotive parts — no
+              damage guarantee.</p>
+            <a class="btn btn--white btn--sm" data-i18n="offer_cta" href="contact.html">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ═══════════════ TESTIMONIALS ═══════════════ -->
+  <section class="testimonials-section section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag" data-i18n="test_tag">Client Reviews</div>
+        <h2 class="section-title" data-i18n="test_title">What Our Clients Say</h2>
+      </div>
+      <div class="testimonials-track" id="testimonialsTrack">
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p class="testimonial-card__text" data-i18n="test1">"Dargol Logistics handled my Shein shipment from Dubai to
+            Erbil flawlessly. Arrived in 3 days with full tracking. Highly recommended!"</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">SR</div>
+            <div>
+              <strong>Sara R.</strong>
+              <span>Erbil, Iraq</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p class="testimonial-card__text" data-i18n="test2">"We use Dargol for all our auto parts imports. Their
+            packaging is exceptional and we've never had a damaged part. Best logistics service in the region."</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">KA</div>
+            <div>
+              <strong>Karwan A.</strong>
+              <span>Auto Dealer, Erbil</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p class="testimonial-card__text" data-i18n="test3">"The $1.25/kg land freight rate is unbeatable in the
+            market. Dargol consistently delivers on time and their WhatsApp support is instant."</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">MH</div>
+            <div>
+              <strong>Mohammed H.</strong>
+              <span>Trader, Dubai</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p class="testimonial-card__text" data-i18n="test4">"Sea freight container shipment arranged within 48 hours.
+            Professional team, perfect documentation. Will use Dargol for all future shipments."</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">LB</div>
+            <div>
+              <strong>Lana B.</strong>
+              <span>Import/Export, Gazna Road</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonials-nav">
+        <button aria-label="Previous" class="test-nav-btn" onclick="prevTestimonial()"><i
+            class="fa-solid fa-chevron-left"></i></button>
+        <div class="test-dots" id="testDots"></div>
+        <button aria-label="Next" class="test-nav-btn" onclick="nextTestimonial()"><i
+            class="fa-solid fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+  <!-- ═══════════════ CTA BANNER ═══════════════ -->
+  <section class="cta-banner">
+    <div class="cta-banner__bg"></div>
+    <div class="container">
+      <div class="cta-banner__content">
+        <h2 data-i18n="cta_title">Ready to Ship with Dargol?</h2>
+        <p data-i18n="cta_subtitle">Contact us today and get a free quote. Our team in Dubai and Erbil is ready to
+          assist you 24/7.</p>
+        <div class="cta-banner__actions">
+          <a class="btn btn--white btn--lg" data-i18n="cta_btn1" href="contact.html">Get Free Quote</a>
+          <a class="btn btn--glass-white btn--lg" href="https://wa.me/971504157900" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i> <span data-i18n="cta_btn2">WhatsApp Us</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ═══════════════ FOOTER ═══════════════ -->
+  <footer class="footer">
+    <div class="footer__main container">
+      <div class="footer__brand">
+        <img alt="Dargol Logistics" class="footer__logo" src="images/dargollogistics.PNG" />
+        <p data-i18n="footer_about">Your trusted logistics partner between the UAE and Iraq. Fast, safe, and reliable
+          freight since 2017.</p>
+        <div class="footer__socials">
+          <a aria-label="WhatsApp" href="https://wa.me/971504157900" target="_blank"><i
+              class="fa-brands fa-whatsapp"></i></a>
+          <a aria-label="Instagram" href="https://www.instagram.com/dargollogistics?igsh=M21uc2piYWtsaDI0"
+            target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a aria-label="Facebook" href="https://www.facebook.com/share/1GXfdihBxV/?mibextid=wwXIfr" target="_blank"><i
+              class="fa-brands fa-facebook"></i></a>
+        </div>
+      </div>
+      <div class="footer__links">
+        <h4 data-i18n="footer_quick">Quick Links</h4>
+        <ul>
+          <li><a data-i18n="nav_home" href="index.html">Home</a></li>
+          <li><a data-i18n="nav_about" href="about.html">About Us</a></li>
+          <li><a data-i18n="nav_services" href="services.html">Services</a></li>
+          <li><a data-i18n="nav_download" href="download.html">Download App</a></li>
+          <li><a data-i18n="nav_blog" href="blog.html">Blog</a></li>
+          <li><a data-i18n="nav_contact" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__services">
+        <h4 data-i18n="footer_services">Services</h4>
+        <ul>
+          <li><a data-i18n="svc_air" href="services.html#air">Air Freight</a></li>
+          <li><a data-i18n="svc_land" href="services.html#land">Land Freight</a></li>
+          <li><a data-i18n="svc_sea" href="services.html#sea">Sea Freight</a></li>
+          <li><a data-i18n="svc_shein" href="services.html#shein">Shein Deliveries</a></li>
+          <li><a data-i18n="svc_auto" href="services.html#autoparts">Auto Parts</a></li>
+        </ul>
+      </div>
+      <div class="footer__contact">
+        <h4 data-i18n="footer_contact">Contact Us</h4>
+        <div class="footer__contact-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <span data-i18n="footer_addr1">Dubai, United Arab Emirates</span>
+        </div>
+        <div class="footer__contact-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <span data-i18n="footer_addr2">Gazna Road, Erbil, Iraq</span>
+        </div>
+        <a class="footer__contact-item footer__contact-item--link" href="tel:+971504157900">
+          <i class="fa-solid fa-phone"></i>
+          <span>+971 50 415 7900</span>
+        </a>
+        <a class="footer__contact-item footer__contact-item--link" href="tel:+9647513077900">
+          <i class="fa-solid fa-phone"></i>
+          <span>+964 751 307 7900</span>
+        </a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p>© 2026 Dargol Logistics. <span data-i18n="footer_rights">All rights reserved.</span></p>
+        <div class="footer__bottom-links">
+          <a data-i18n="nav_privacy" href="privacy.html">Privacy Policy</a>
+          <a data-i18n="nav_survey" href="survey.html">App Survey</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- ═══════════════ BACK TO TOP ═══════════════ -->
+  <button aria-label="Back to top" class="back-to-top" id="backToTop" onclick="scrollToTop()">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+  <!-- Scripts -->
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
+

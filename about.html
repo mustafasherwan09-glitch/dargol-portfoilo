@@ -1,0 +1,259 @@
+﻿<!DOCTYPE html>
+
+<html dir="ltr" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Dargol Logistics – Our Story &amp; Team</title>
+<meta content="Learn about Dargol Logistics – our founding, growth, the team driving Dubai-Erbil freight excellence, and our vision for the future." name="description"/>
+<link href="dargollogistics.PNG" rel="icon" type="image/png"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;family=Outfit:wght@300;400;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+</link></link></head>
+<body class="page-about" data-lang="en">
+<div class="side-overlay" id="sideOverlay" onclick="closeSideMenu()"></div>
+<aside class="side-menu" id="sideMenu">
+<div class="side-menu__header">
+<img alt="Dargol Logistics" class="side-menu__logo" src="images/dargollogistics.PNG"/>
+<button class="side-menu__close" onclick="closeSideMenu()"><i class="fa-solid fa-xmark"></i></button>
+</div>
+<nav class="side-menu__nav">
+<a class="side-nav-link" data-i18n="nav_home" href="index.html"><i class="fa-solid fa-house"></i><span>Home</span></a>
+<a class="side-nav-link active" data-i18n="nav_about" href="about.html"><i class="fa-solid fa-building"></i><span>About Us</span></a>
+<a class="side-nav-link" data-i18n="nav_services" href="services.html"><i class="fa-solid fa-truck-fast"></i><span>Services</span></a>
+<a class="side-nav-link" data-i18n="nav_download" href="download.html"><i class="fa-solid fa-mobile-screen"></i><span>Download App</span></a>
+<a class="side-nav-link" data-i18n="nav_blog" href="blog.html"><i class="fa-solid fa-newspaper"></i><span>Blog</span></a>
+<a class="side-nav-link" data-i18n="nav_contact" href="contact.html"><i class="fa-solid fa-envelope"></i><span>Get In Touch</span></a>
+<a class="side-nav-link" data-i18n="nav_survey" href="survey.html"><i class="fa-solid fa-clipboard-list"></i><span>App Survey</span></a>
+<a class="side-nav-link" data-i18n="nav_privacy" href="privacy.html"><i class="fa-solid fa-shield-halved"></i><span>Privacy Policy</span></a>
+</nav>
+<div class="side-menu__contacts">
+<a class="wa-link" href="https://wa.me/971504157900" target="_blank"><i class="fa-brands fa-whatsapp"></i> +971 50 415 7900</a>
+<a class="wa-link" href="https://wa.me/9647513077900" target="_blank"><i class="fa-brands fa-whatsapp"></i> +964 751 307 7900</a>
+</div>
+    <!-- Language Switcher — bottom of side menu, text-only -->
+    <div class="lang-switcher" id="sideLangSwitcher">
+      <p class="lang-switcher__label" data-i18n="change_language">Language</p>
+      <div class="lang-switcher__buttons">
+        <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+        <button class="lang-btn" data-lang="ku" onclick="switchLang('ku')">کوردی</button>
+        <button class="lang-btn" data-lang="ar" onclick="switchLang('ar')">العربية</button>
+      </div>
+    </div>
+</aside>
+<header class="navbar" id="mainNavbar">
+<div class="navbar__inner container">
+<a class="navbar__brand" href="index.html">
+<img alt="Dargol Logistics" class="navbar__logo" src="images/dargollogistics.PNG"/>
+<span class="navbar__name">DARGOL <span>LOGISTICS</span></span>
+</a>
+<nav class="navbar__links">
+<a class="nav-link" data-i18n="nav_home" href="index.html">Home</a>
+<a class="nav-link active" data-i18n="nav_about" href="about.html">About</a>
+<a class="nav-link" data-i18n="nav_services" href="services.html">Services</a>
+<a class="nav-link" data-i18n="nav_download" href="download.html">Download App</a>
+<a class="nav-link" data-i18n="nav_blog" href="blog.html">Blog</a>
+<a class="nav-link" data-i18n="nav_contact" href="contact.html">Contact</a>
+</nav>
+<div class="navbar__actions">
+<a class="btn btn--primary btn--sm" data-i18n="nav_get_app" href="download.html"><i class="fa-solid fa-mobile-screen"></i> Get the App</a>
+        <div class="lang-dropdown" id="langDropdown">
+          <button class="lang-dropdown__toggle" id="langDropdownToggle" onclick="toggleLangDropdown()" aria-label="Change language">
+            <span id="langDropdownLabel">English</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="lang-dropdown__menu" id="langDropdownMenu">
+            <button class="lang-dropdown__item active" data-lang="en" onclick="switchLang('en');closeLangDropdown()">English</button>
+            <button class="lang-dropdown__item" data-lang="ku" onclick="switchLang('ku');closeLangDropdown()">کوردی</button>
+            <button class="lang-dropdown__item" data-lang="ar" onclick="switchLang('ar');closeLangDropdown()">العربية</button>
+          </div>
+        </div>
+<button class="hamburger" onclick="openSideMenu()"><span></span><span></span><span></span></button>
+</div>
+</div>
+</header>
+<!-- Page Hero -->
+<section class="page-hero">
+<div class="container page-hero__content">
+<div class="page-hero__tag"><i class="fa-solid fa-building"></i> <span data-i18n="about_hero_tag">Our Story</span></div>
+<h1 class="page-hero__title" data-i18n="about_hero_title">About Dargol Logistics</h1>
+<p class="page-hero__subtitle" data-i18n="about_hero_subtitle">Born in the heart of UAE–Iraq trade, built on trust, speed, and an uncompromising commitment to your cargo's safety.</p>
+</div>
+</section>
+<!-- Mission & Vision -->
+<section class="section" style="background:var(--off-white);">
+<div class="container">
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:center;">
+<div>
+<div class="section-tag"><i class="fa-solid fa-bullseye"></i> <span data-i18n="mission_tag">Our Mission</span></div>
+<h2 class="section-title" style="text-align:left;" data-i18n="mission_title">Connecting Dubai to Erbil, One Shipment at a Time</h2>
+<p style="color:var(--gray-500); line-height:1.75; margin-bottom:20px;" data-i18n="mission_p1">
+            Dargol Logistics was established with a singular vision: to create the most reliable, fastest, and most affordable freight corridor between Dubai (UAE) and Erbil (Kurdistan Region, Iraq).
+          </p>
+<p style="color:var(--gray-500); line-height:1.75; margin-bottom:32px;" data-i18n="mission_p2">
+            We understand the unique challenges of UAE–Iraq trade — complex customs, cross-border regulations, and the critical importance of timely delivery. Our deep expertise in both markets allows us to navigate these challenges seamlessly, offering our clients unparalleled peace of mind.
+          </p>
+<div style="display:flex; gap:24px; flex-wrap:wrap;">
+<div style="text-align:center; padding:20px; background:var(--white); border-radius:var(--radius-lg); border:1px solid var(--gray-200); min-width:120px;">
+<div style="font-family:var(--font-display); font-size:2rem; font-weight:900; background:var(--gradient-primary); -webkit-background-clip:text; -webkit-text-fill-color:transparent;">2017</div>
+<div style="font-size:0.8rem; color:var(--gray-500);" data-i18n="stat_founded">Founded</div>
+</div>
+<div style="text-align:center; padding:20px; background:var(--white); border-radius:var(--radius-lg); border:1px solid var(--gray-200); min-width:120px;">
+<div style="font-family:var(--font-display); font-size:2rem; font-weight:900; background:var(--gradient-primary); -webkit-background-clip:text; -webkit-text-fill-color:transparent;">2</div>
+<div style="font-size:0.8rem; color:var(--gray-500);" data-i18n="stat_offices">Offices</div>
+</div>
+<div style="text-align:center; padding:20px; background:var(--white); border-radius:var(--radius-lg); border:1px solid var(--gray-200); min-width:120px;">
+<div style="font-family:var(--font-display); font-size:2rem; font-weight:900; background:var(--gradient-primary); -webkit-background-clip:text; -webkit-text-fill-color:transparent;">3K+</div>
+<div style="font-size:0.8rem; color:var(--gray-500);" data-i18n="stat_clients">Clients</div>
+</div>
+</div>
+</div>
+<div style="border-radius:var(--radius-2xl); overflow:hidden; box-shadow:var(--shadow-xl); height:480px;">
+<img alt="Dargol Logistics Operations" src="images/transport-logistics-products.jpg" style="width:100%; height:100%; object-fit:cover;"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Timeline -->
+<section class="section">
+<div class="container">
+<div class="section-header">
+<div class="section-tag"><i class="fa-solid fa-timeline"></i> <span data-i18n="tl_tag">Our Journey</span></div>
+<h2 class="section-title" data-i18n="tl_title">Company Timeline</h2>
+<p class="section-subtitle" data-i18n="tl_subtitle">From a small freight office in Dubai to the leading UAE–Iraq logistics specialist.</p>
+</div>
+<div style="max-width:700px; margin-inline:auto;">
+<div class="timeline">
+<div class="timeline-item reveal">
+<div class="timeline-item__dot">✦</div>
+<div class="timeline-item__year">2017</div>
+<div class="timeline-item__title" data-i18n="tl_1_title">Dargol Logistics Founded in Dubai</div>
+<div class="timeline-item__desc" data-i18n="tl_1_desc">The company was established in Dubai with a focus on land freight between UAE and Iraq, serving early customers with a single truck route to Erbil.</div>
+</div>
+<div class="timeline-item reveal reveal--delay-1">
+<div class="timeline-item__dot">✦</div>
+<div class="timeline-item__year">2018</div>
+<div class="timeline-item__title" data-i18n="tl_2_title">Erbil Office Opens on Gazna Road</div>
+<div class="timeline-item__desc" data-i18n="tl_2_desc">To better serve our Iraqi customers, we opened our Erbil branch on Gazna Road — the logistics hub of Kurdistan. Same-day delivery for local Erbil clients launched.</div>
+</div>
+<div class="timeline-item reveal reveal--delay-2">
+<div class="timeline-item__dot">✦</div>
+<div class="timeline-item__year">2020</div>
+<div class="timeline-item__title" data-i18n="tl_3_title">Air Freight Service Launched</div>
+<div class="timeline-item__desc" data-i18n="tl_3_desc">We introduced our express air freight service, cutting Dubai-Erbil delivery time from 5–7 days to as fast as 24–48 hours. Partnership with leading air cargo operators established.</div>
+</div>
+<div class="timeline-item reveal reveal--delay-3">
+<div class="timeline-item__dot">✦</div>
+<div class="timeline-item__year">2021</div>
+<div class="timeline-item__title" data-i18n="tl_4_title">Shein Package Delivery Program Starts</div>
+<div class="timeline-item__desc" data-i18n="tl_4_desc">Recognizing the explosive growth of Shein orders in Kurdistan, we launched our dedicated Shein consolidation service. Over 5,000 packages delivered in the first year.</div>
+</div>
+<div class="timeline-item reveal reveal--delay-4">
+<div class="timeline-item__dot">✦</div>
+<div class="timeline-item__year">2023</div>
+<div class="timeline-item__title" data-i18n="tl_5_title">Sea Freight &amp; Container Shipping Added</div>
+<div class="timeline-item__desc" data-i18n="tl_5_desc">Full container (FCL) and groupage (LCL) sea freight services launched for larger volumes. Partnerships with Jebel Ali port operators enable global shipping capabilities.</div>
+</div>
+<div class="timeline-item reveal reveal--delay-5">
+<div class="timeline-item__dot">⭐</div>
+<div class="timeline-item__year">2024–2026</div>
+<div class="timeline-item__title" data-i18n="tl_6_title">Digital Transformation &amp; App Launch</div>
+<div class="timeline-item__desc" data-i18n="tl_6_desc">Real-time tracking portal launched. Development of the Dargol mobile app in progress. 15,000+ shipments delivered. Recognized as the #1 Dubai–Erbil freight specialist.</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Values -->
+<section class="section">
+<div class="container">
+<div class="section-header">
+<div class="section-tag" data-i18n="val_tag">Our Values</div>
+<h2 class="section-title" data-i18n="val_title">What Drives Us</h2>
+</div>
+<div style="display:grid; grid-template-columns:repeat(3,1fr); gap:28px;">
+<div class="reveal" style="padding:36px 28px; border-radius:var(--radius-xl); border:1px solid var(--gray-200); text-align:center;">
+<div style="width:64px; height:64px; border-radius:var(--radius-xl); background:var(--gradient-primary); display:flex; align-items:center; justify-content:center; font-size:1.5rem; color:var(--white); margin:0 auto 20px; box-shadow:var(--shadow-purple);">
+<i class="fa-solid fa-handshake"></i>
+</div>
+<h3 style="font-family:var(--font-display); font-size:1.1rem; font-weight:700; color:var(--gray-900); margin-bottom:10px;" data-i18n="val_1_title">Trust &amp; Reliability</h3>
+<p style="font-size:0.875rem; color:var(--gray-500); line-height:1.7;" data-i18n="val_1_desc">Every commitment we make, we keep. Your cargo is our responsibility from pickup to delivery.</p>
+</div>
+<div class="reveal reveal--delay-2" style="padding:36px 28px; border-radius:var(--radius-xl); border:1px solid var(--gray-200); text-align:center;">
+<div style="width:64px; height:64px; border-radius:var(--radius-xl); background:linear-gradient(135deg, var(--cyan-600), var(--blue-500)); display:flex; align-items:center; justify-content:center; font-size:1.5rem; color:var(--white); margin:0 auto 20px; box-shadow:var(--shadow-cyan);">
+<i class="fa-solid fa-bolt"></i>
+</div>
+<h3 style="font-family:var(--font-display); font-size:1.1rem; font-weight:700; color:var(--gray-900); margin-bottom:10px;" data-i18n="val_2_title">Speed &amp; Efficiency</h3>
+<p style="font-size:0.875rem; color:var(--gray-500); line-height:1.7;" data-i18n="val_2_desc">We're obsessed with delivery speed. Every process is optimized to get your cargo where it needs to be, fast.</p>
+</div>
+<div class="reveal reveal--delay-4" style="padding:36px 28px; border-radius:var(--radius-xl); border:1px solid var(--gray-200); text-align:center;">
+<div style="width:64px; height:64px; border-radius:var(--radius-xl); background:linear-gradient(135deg, #0f766e, #16a34a); display:flex; align-items:center; justify-content:center; font-size:1.5rem; color:var(--white); margin:0 auto 20px;">
+<i class="fa-solid fa-shield-halved"></i>
+</div>
+<h3 style="font-family:var(--font-display); font-size:1.1rem; font-weight:700; color:var(--gray-900); margin-bottom:10px;" data-i18n="val_3_title">Safety First</h3>
+<p style="font-size:0.875rem; color:var(--gray-500); line-height:1.7;" data-i18n="val_3_desc">100% insured cargo. Specialized packing for fragile goods, electronics, and auto parts. No compromises.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA -->
+<section class="cta-banner">
+<div class="cta-banner__bg"></div>
+<div class="container">
+<div class="cta-banner__content">
+<h2 data-i18n="cta_title2">Ready to Partner with Dargol?</h2>
+<p data-i18n="cta_subtitle2">Join thousands of businesses and individuals who trust us for their Dubai–Erbil freight needs.</p>
+<div class="cta-banner__actions">
+<a class="btn btn--white btn--lg" href="contact.html" data-i18n="cta_btn1">Get Free Quote</a>
+<a class="btn btn--glass-white btn--lg" href="https://wa.me/971504157900" target="_blank">
+<i class="fa-brands fa-whatsapp"></i> <span data-i18n="cta_btn2">WhatsApp Us</span>
+          </a>
+</div>
+</div>
+</div>
+</section>
+<footer class="footer">
+<div class="footer__main container">
+<div class="footer__brand">
+<img alt="Dargol Logistics" class="footer__logo" src="images/dargollogistics.PNG"/>
+<p data-i18n="footer_about">Your trusted logistics partner between the UAE and Iraq. Fast, safe, and reliable freight since 2017.</p>
+<div class="footer__socials">
+<a href="https://wa.me/971504157900" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+<a href="https://www.instagram.com/dargollogistics?igsh=M21uc2piYWtsaDI0" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+<a href="https://www.facebook.com/share/1GXfdihBxV/?mibextid=wwXIfr" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+</div>
+</div>
+<div class="footer__links">
+<h4 data-i18n="footer_quick">Quick Links</h4>
+<ul>
+<li><a data-i18n="nav_home" href="index.html">Home</a></li>
+<li><a data-i18n="nav_about" href="about.html">About Us</a></li>
+<li><a data-i18n="nav_services" href="services.html">Services</a></li>
+<li><a data-i18n="nav_download" href="download.html">Download App</a></li>
+<li><a data-i18n="nav_contact" href="contact.html">Contact</a></li>
+</ul>
+</div>
+<div class="footer__contact">
+<h4 data-i18n="footer_contact">Contact Us</h4>
+<div class="footer__contact-item"><i class="fa-solid fa-location-dot"></i><span data-i18n="footer_addr1">Dubai, UAE</span></div>
+<div class="footer__contact-item"><i class="fa-solid fa-location-dot"></i><span data-i18n="footer_addr2">Gazna Road, Erbil, Iraq</span></div>
+<a class="footer__contact-item footer__contact-item--link" href="tel:+971504157900"><i class="fa-solid fa-phone"></i><span>+971 50 415 7900</span></a>
+</div>
+</div>
+<div class="footer__bottom">
+<div class="container">
+<p>© 2026 Dargol Logistics. All rights reserved.</p>
+<div class="footer__bottom-links"><a href="privacy.html">Privacy Policy</a><a href="survey.html">App Survey</a></div>
+</div>
+</div>
+</footer>
+<button class="back-to-top" id="backToTop" onclick="scrollToTop()"><i class="fa-solid fa-chevron-up"></i></button>
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
+
+

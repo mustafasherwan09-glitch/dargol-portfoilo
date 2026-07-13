@@ -1,0 +1,264 @@
+﻿<!DOCTYPE html>
+
+<html dir="ltr" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Get In Touch – Dargol Logistics</title>
+<meta content="Contact Dargol Logistics in Dubai or Erbil. Send a message, call us, or chat on WhatsApp for a free freight quote." name="description"/>
+<link href="dargollogistics.PNG" rel="icon" type="image/png"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;family=Outfit:wght@300;400;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+</link></link></head>
+<body class="page-contact" data-lang="en">
+<div class="side-overlay" id="sideOverlay" onclick="closeSideMenu()"></div>
+<aside class="side-menu" id="sideMenu">
+<div class="side-menu__header">
+<img alt="Dargol Logistics" class="side-menu__logo" src="images/dargollogistics.PNG"/>
+<button class="side-menu__close" onclick="closeSideMenu()"><i class="fa-solid fa-xmark"></i></button>
+</div>
+<nav class="side-menu__nav">
+<a class="side-nav-link" data-i18n="nav_home" href="index.html"><i class="fa-solid fa-house"></i><span>Home</span></a>
+<a class="side-nav-link" data-i18n="nav_about" href="about.html"><i class="fa-solid fa-building"></i><span>About Us</span></a>
+<a class="side-nav-link" data-i18n="nav_services" href="services.html"><i class="fa-solid fa-truck-fast"></i><span>Services</span></a>
+<a class="side-nav-link" data-i18n="nav_download" href="download.html"><i class="fa-solid fa-mobile-screen"></i><span>Download App</span></a>
+<a class="side-nav-link" data-i18n="nav_blog" href="blog.html"><i class="fa-solid fa-newspaper"></i><span>Blog</span></a>
+<a class="side-nav-link active" data-i18n="nav_contact" href="contact.html"><i class="fa-solid fa-envelope"></i><span>Get In Touch</span></a>
+<a class="side-nav-link" data-i18n="nav_survey" href="survey.html"><i class="fa-solid fa-clipboard-list"></i><span>App Survey</span></a>
+<a class="side-nav-link" data-i18n="nav_privacy" href="privacy.html"><i class="fa-solid fa-shield-halved"></i><span>Privacy Policy</span></a>
+</nav>
+<div class="side-menu__contacts">
+<a class="wa-link" href="https://wa.me/971504157900" target="_blank"><i class="fa-brands fa-whatsapp"></i> +971 50 415 7900</a>
+<a class="wa-link" href="https://wa.me/9647513077900" target="_blank"><i class="fa-brands fa-whatsapp"></i> +964 751 307 7900</a>
+</div>
+    <!-- Language Switcher — bottom of side menu, text-only -->
+    <div class="lang-switcher" id="sideLangSwitcher">
+      <p class="lang-switcher__label" data-i18n="change_language">Language</p>
+      <div class="lang-switcher__buttons">
+        <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+        <button class="lang-btn" data-lang="ku" onclick="switchLang('ku')">کوردی</button>
+        <button class="lang-btn" data-lang="ar" onclick="switchLang('ar')">العربية</button>
+      </div>
+    </div>
+</aside>
+<header class="navbar" id="mainNavbar">
+<div class="navbar__inner container">
+<a class="navbar__brand" href="index.html">
+<img alt="Dargol Logistics" class="navbar__logo" src="images/dargollogistics.PNG"/>
+<span class="navbar__name">DARGOL <span>LOGISTICS</span></span>
+</a>
+<nav class="navbar__links">
+<a class="nav-link" data-i18n="nav_home" href="index.html">Home</a>
+<a class="nav-link" data-i18n="nav_about" href="about.html">About</a>
+<a class="nav-link" data-i18n="nav_services" href="services.html">Services</a>
+<a class="nav-link" data-i18n="nav_download" href="download.html">Download App</a>
+<a class="nav-link" data-i18n="nav_blog" href="blog.html">Blog</a>
+<a class="nav-link active" data-i18n="nav_contact" href="contact.html">Contact</a>
+</nav>
+<div class="navbar__actions">
+<a class="btn btn--primary btn--sm" data-i18n="nav_get_app" href="download.html"><i class="fa-solid fa-mobile-screen"></i> Get the App</a>
+        <div class="lang-dropdown" id="langDropdown">
+          <button class="lang-dropdown__toggle" id="langDropdownToggle" onclick="toggleLangDropdown()" aria-label="Change language">
+            <span id="langDropdownLabel">English</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="lang-dropdown__menu" id="langDropdownMenu">
+            <button class="lang-dropdown__item active" data-lang="en" onclick="switchLang('en');closeLangDropdown()">English</button>
+            <button class="lang-dropdown__item" data-lang="ku" onclick="switchLang('ku');closeLangDropdown()">کوردی</button>
+            <button class="lang-dropdown__item" data-lang="ar" onclick="switchLang('ar');closeLangDropdown()">العربية</button>
+          </div>
+        </div>
+<button class="hamburger" onclick="openSideMenu()"><span></span><span></span><span></span></button>
+</div>
+</div>
+</header>
+<!-- Page Hero -->
+<section class="page-hero">
+<div class="container page-hero__content">
+<div class="page-hero__tag"><i class="fa-solid fa-envelope"></i> <span data-i18n="contact_hero_tag">Get In Touch</span></div>
+<h1 class="page-hero__title" data-i18n="contact_hero_title">Contact Dargol Logistics</h1>
+<p class="page-hero__subtitle" data-i18n="contact_hero_subtitle">Reach our teams in Dubai and Erbil. We respond within hours — often immediately via WhatsApp.</p>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="section" style="background: var(--off-white);">
+<div class="container">
+<div class="contact-grid">
+<!-- Info Panel -->
+<div class="contact-info-card">
+<h3 data-i18n="contact_talk_title">Let's Talk Logistics</h3>
+<p data-i18n="contact_talk_desc">Whether you need a quick quote, have questions about customs, or want to arrange a large shipment — we're here 24/7.</p>
+<div class="contact-detail">
+<div class="contact-detail__icon"><i class="fa-solid fa-location-dot"></i></div>
+<div>
+<h5 data-i18n="contact_dubai_title">Dubai Office</h5>
+<p data-i18n="map_dubai">Dubai, United Arab Emirates</p>
+</div>
+</div>
+<div class="contact-detail">
+<div class="contact-detail__icon"><i class="fa-solid fa-location-dot"></i></div>
+<div>
+<h5 data-i18n="contact_erbil_title">Erbil Office</h5>
+<p data-i18n="map_erbil">Gazna Road, Erbil, Kurdistan Region, Iraq</p>
+</div>
+</div>
+<div class="contact-detail">
+<div class="contact-detail__icon"><i class="fa-solid fa-phone"></i></div>
+<div>
+<h5 data-i18n="contact_phone_dubai">Phone (Dubai)</h5>
+<p><a href="tel:+971504157900" style="color:var(--white)">+971 50 415 7900</a></p>
+</div>
+</div>
+<div class="contact-detail">
+<div class="contact-detail__icon"><i class="fa-solid fa-phone"></i></div>
+<div>
+<h5 data-i18n="contact_phone_erbil">Phone (Erbil)</h5>
+<p><a href="tel:+9647513077900" style="color:var(--white)">+964 751 307 7900</a></p>
+</div>
+</div>
+<div class="contact-detail">
+<div class="contact-detail__icon"><i class="fa-solid fa-clock"></i></div>
+<div>
+<h5 data-i18n="contact_hours">Working Hours</h5>
+<p data-i18n="contact_hours_desc">24/7 — WhatsApp Always Active</p>
+</div>
+</div>
+<div class="contact-wa-btns">
+<a class="contact-wa-btn" href="https://wa.me/971504157900?text=Hello%20Dargol%20Logistics%2C%20I%20need%20a%20freight%20quote." target="_blank">
+<i class="fa-brands fa-whatsapp"></i>
+<div>
+<div style="font-size:0.75rem; opacity:0.8; margin-bottom:2px;">Dubai Office</div>
+<div>+971 50 415 7900</div>
+</div>
+</a>
+<a class="contact-wa-btn" href="https://wa.me/9647513077900?text=Hello%20Dargol%20Logistics%2C%20I%20need%20a%20freight%20quote." target="_blank">
+<i class="fa-brands fa-whatsapp"></i>
+<div>
+<div style="font-size:0.75rem; opacity:0.8; margin-bottom:2px;">Erbil Office</div>
+<div>+964 751 307 7900</div>
+</div>
+</a>
+</div>
+</div>
+<!-- Contact Form -->
+<form class="contact-form" onsubmit="sendToWhatsApp(event)">
+<h3 data-i18n="contact_form_title" style="font-family:var(--font-display); font-size:1.5rem; font-weight:800; color:var(--gray-900); margin-bottom:8px;">Send Us a Message</h3>
+<p data-i18n="contact_form_desc" style="font-size:0.9rem; color:var(--gray-500); margin-bottom:36px;">Fill in the form below and click <strong>Send Message</strong> — it will open WhatsApp with your details pre-filled so we can respond instantly.</p>
+<div class="form-row">
+<div class="form-group">
+<label data-i18n="contact_lbl_name" for="contactName">Full Name *</label>
+<input data-i18n-placeholder="contact_plc_name" id="contactName" name="name" placeholder="Your full name" required="" type="text"/>
+</div>
+<div class="form-group">
+<label data-i18n="contact_lbl_email" for="contactEmail">Email Address *</label>
+<input data-i18n-placeholder="contact_plc_email" id="contactEmail" name="email" placeholder="your@email.com" required="" type="email"/>
+</div>
+</div>
+<div class="form-group">
+<label data-i18n="contact_lbl_phone" for="contactPhone">Phone / WhatsApp</label>
+<input data-i18n-placeholder="contact_plc_phone" id="contactPhone" name="phone" placeholder="+971 or +964..." type="tel"/>
+</div>
+<div class="form-group">
+<label data-i18n="contact_lbl_service" for="contactService">Service Required</label>
+<select id="contactService" name="service">
+<option data-i18n="contact_opt_select" value="">Select a service...</option>
+<option data-i18n="contact_opt_air" value="air">Air Freight – Dubai to Erbil</option>
+<option data-i18n="contact_opt_land" value="land">Land Freight – $1.25/kg Route</option>
+<option data-i18n="contact_opt_sea" value="sea">Sea Freight / Container Shipping</option>
+<option data-i18n="contact_opt_shein" value="shein">Shein Package Delivery</option>
+<option data-i18n="contact_opt_auto" value="autoparts">Auto Parts Transport</option>
+<option data-i18n="contact_opt_gen" value="general">General Inquiry</option>
+</select>
+</div>
+<div class="form-group">
+<label data-i18n="contact_lbl_msg" for="contactMsg">Your Message *</label>
+<textarea data-i18n-placeholder="contact_plc_msg" id="contactMsg" name="message" placeholder="Tell us about your shipment needs, dimensions, weight, or any special requirements..." required=""></textarea>
+</div>
+<button class="btn btn--primary btn--lg" style="width:100%; justify-content:center; background:linear-gradient(135deg,#25d366,#128c7e); border:none;" type="submit">
+<i class="fa-brands fa-whatsapp"></i> <span data-i18n="contact_btn_send">Send via WhatsApp</span>
+</button>
+<p data-i18n="contact_form_note" style="font-size:0.78rem; color:var(--gray-400); text-align:center; margin-top:16px;">
+            Clicking the button will open <strong style="color:#25d366;">WhatsApp</strong> with your message pre-filled. We respond within <strong style="color:var(--purple-600);">minutes</strong>.
+          </p>
+</form>
+</div>
+</div>
+</section>
+<!-- Map Section -->
+<section class="section map-section" style="padding-block: 64px;">
+<div class="container">
+<div class="section-header">
+<div class="section-tag"><i class="fa-solid fa-map"></i> <span data-i18n="map_tag">Our Locations</span></div>
+<h2 class="section-title" data-i18n="map_title">Find Us</h2>
+<p class="section-subtitle" data-i18n="map_subtitle">Visit our offices in Dubai and Erbil. We're strategically located for the UAE–Iraq corridor.</p>
+</div>
+<div style="display:grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+<!-- Dubai Map -->
+<div>
+<h4 style="font-family:var(--font-display); font-size:1rem; font-weight:700; color:var(--gray-900); margin-bottom:12px;">
+<i class="fa-solid fa-location-dot" style="color:var(--purple-600);"></i> Dubai, UAE
+          </h4>
+<div class="map-container" style="height:300px; border-radius:var(--radius-lg); overflow:hidden; box-shadow:var(--shadow-md);">
+<iframe loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=55.17%2C25.10%2C55.35%2C25.28&amp;layer=mapnik&amp;marker=25.2048%2C55.2708" style="width:100%;height:100%;border:none;" title="Dubai Office Location">
+</iframe>
+</div>
+</div>
+<!-- Erbil Map -->
+<div>
+<h4 style="font-family:var(--font-display); font-size:1rem; font-weight:700; color:var(--gray-900); margin-bottom:12px;">
+<i class="fa-solid fa-location-dot" style="color:var(--cyan-600);"></i> Erbil (Gazna Road), Iraq
+          </h4>
+<div class="map-container" style="height:300px; border-radius:var(--radius-lg); overflow:hidden; box-shadow:var(--shadow-md);">
+<iframe loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=43.97%2C36.16%2C44.08%2C36.23&amp;layer=mapnik&amp;marker=36.1901%2C44.0091" style="width:100%;height:100%;border:none;" title="Erbil Office Location">
+</iframe>
+</div>
+</div>
+</div>
+</div>
+</section>
+<footer class="footer">
+<div class="footer__main container">
+<div class="footer__brand">
+<img alt="Dargol Logistics" class="footer__logo" src="images/dargollogistics.PNG"/>
+<p data-i18n="footer_about">Your trusted logistics partner between the UAE and Iraq. Fast, safe, and reliable freight since 2017.</p>
+<div class="footer__socials">
+<a href="https://wa.me/971504157900" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+<a href="https://www.facebook.com/share/1GXfdihBxV/?mibextid=wwXIfr" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+<a href="https://www.instagram.com/dargollogistics?igsh=M21uc2piYWtsaDI0" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+</div>
+</div>
+<div class="footer__links">
+<h4 data-i18n="footer_quick">Quick Links</h4>
+<ul>
+<li><a data-i18n="nav_home" href="index.html">Home</a></li>
+<li><a data-i18n="nav_about" href="about.html">About Us</a></li>
+<li><a data-i18n="nav_services" href="services.html">Services</a></li>
+<li><a href="tracking.html"><i class="fa-solid fa-mobile-screen"></i> Get the App</a></li>
+<li><a data-i18n="nav_blog" href="blog.html">Blog</a></li>
+</ul>
+</div>
+<div class="footer__contact">
+<h4 data-i18n="footer_contact">Contact Us</h4>
+<div class="footer__contact-item"><i class="fa-solid fa-location-dot"></i><span data-i18n="footer_addr1">Dubai, UAE</span></div>
+<div class="footer__contact-item"><i class="fa-solid fa-location-dot"></i><span data-i18n="footer_addr2">Gazna Road, Erbil, Iraq</span></div>
+<a class="footer__contact-item footer__contact-item--link" href="tel:+971504157900"><i class="fa-solid fa-phone"></i><span>+971 50 415 7900</span></a>
+<a class="footer__contact-item footer__contact-item--link" href="tel:+9647513077900"><i class="fa-solid fa-phone"></i><span>+964 751 307 7900</span></a>
+</div>
+</div>
+<div class="footer__bottom">
+<div class="container">
+<p>© 2026 Dargol Logistics. All rights reserved.</p>
+<div class="footer__bottom-links"><a href="privacy.html">Privacy Policy</a><a href="survey.html">App Survey</a></div>
+</div>
+</div>
+</footer>
+<button class="back-to-top" id="backToTop" onclick="scrollToTop()"><i class="fa-solid fa-chevron-up"></i></button>
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
+
+

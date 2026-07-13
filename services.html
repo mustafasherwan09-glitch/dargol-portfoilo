@@ -1,0 +1,243 @@
+﻿<!DOCTYPE html>
+
+<html dir="ltr" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Services – Dargol Logistics | Air, Land, Sea &amp; Cargo Freight</title>
+<meta content="Explore Dargol Logistics services: Air Freight, Land Freight Dubai to Erbil at $1.25/kg, Sea Freight, Shein Deliveries, Auto Parts Transport, and more." name="description"/>
+<link href="dargollogistics.PNG" rel="icon" type="image/png"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;family=Outfit:wght@300;400;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+</link></link></head>
+<body class="page-services" data-lang="en">
+<div class="side-overlay" id="sideOverlay" onclick="closeSideMenu()"></div>
+<aside class="side-menu" id="sideMenu">
+<div class="side-menu__header">
+<img alt="Dargol Logistics" class="side-menu__logo" src="images/dargollogistics.PNG"/>
+<button class="side-menu__close" onclick="closeSideMenu()"><i class="fa-solid fa-xmark"></i></button>
+</div>
+<nav class="side-menu__nav">
+<a class="side-nav-link" data-i18n="nav_home" href="index.html"><i class="fa-solid fa-house"></i><span>Home</span></a>
+<a class="side-nav-link" data-i18n="nav_about" href="about.html"><i class="fa-solid fa-building"></i><span>About Us</span></a>
+<a class="side-nav-link active" data-i18n="nav_services" href="services.html"><i class="fa-solid fa-truck-fast"></i><span>Services</span></a>
+<a class="side-nav-link" data-i18n="nav_download" href="download.html"><i class="fa-solid fa-mobile-screen"></i><span>Download App</span></a>
+<a class="side-nav-link" data-i18n="nav_blog" href="blog.html"><i class="fa-solid fa-newspaper"></i><span>Blog</span></a>
+<a class="side-nav-link" data-i18n="nav_contact" href="contact.html"><i class="fa-solid fa-envelope"></i><span>Get In Touch</span></a>
+<a class="side-nav-link" data-i18n="nav_survey" href="survey.html"><i class="fa-solid fa-clipboard-list"></i><span>App Survey</span></a>
+<a class="side-nav-link" data-i18n="nav_privacy" href="privacy.html"><i class="fa-solid fa-shield-halved"></i><span>Privacy Policy</span></a>
+</nav>
+<div class="side-menu__contacts">
+<a class="wa-link" href="https://wa.me/971504157900" target="_blank"><i class="fa-brands fa-whatsapp"></i> +971 50 415 7900</a>
+<a class="wa-link" href="https://wa.me/9647513077900" target="_blank"><i class="fa-brands fa-whatsapp"></i> +964 751 307 7900</a>
+</div>
+    <!-- Language Switcher — bottom of side menu, text-only -->
+    <div class="lang-switcher" id="sideLangSwitcher">
+      <p class="lang-switcher__label" data-i18n="change_language">Language</p>
+      <div class="lang-switcher__buttons">
+        <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+        <button class="lang-btn" data-lang="ku" onclick="switchLang('ku')">کوردی</button>
+        <button class="lang-btn" data-lang="ar" onclick="switchLang('ar')">العربية</button>
+      </div>
+    </div>
+</aside>
+<header class="navbar" id="mainNavbar">
+<div class="navbar__inner container">
+<a class="navbar__brand" href="index.html">
+<img alt="Dargol Logistics" class="navbar__logo" src="images/dargollogistics.PNG"/>
+<span class="navbar__name">DARGOL <span>LOGISTICS</span></span>
+</a>
+<nav class="navbar__links">
+<a class="nav-link" data-i18n="nav_home" href="index.html">Home</a>
+<a class="nav-link" data-i18n="nav_about" href="about.html">About</a>
+<a class="nav-link active" data-i18n="nav_services" href="services.html">Services</a>
+<a class="nav-link" data-i18n="nav_download" href="download.html">Download App</a>
+<a class="nav-link" data-i18n="nav_blog" href="blog.html">Blog</a>
+<a class="nav-link" data-i18n="nav_contact" href="contact.html">Contact</a>
+</nav>
+<div class="navbar__actions">
+<a class="btn btn--primary btn--sm" data-i18n="nav_get_app" href="download.html"><i class="fa-solid fa-mobile-screen"></i> Get the App</a>
+        <div class="lang-dropdown" id="langDropdown">
+          <button class="lang-dropdown__toggle" id="langDropdownToggle" onclick="toggleLangDropdown()" aria-label="Change language">
+            <span id="langDropdownLabel">English</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="lang-dropdown__menu" id="langDropdownMenu">
+            <button class="lang-dropdown__item active" data-lang="en" onclick="switchLang('en');closeLangDropdown()">English</button>
+            <button class="lang-dropdown__item" data-lang="ku" onclick="switchLang('ku');closeLangDropdown()">کوردی</button>
+            <button class="lang-dropdown__item" data-lang="ar" onclick="switchLang('ar');closeLangDropdown()">العربية</button>
+          </div>
+        </div>
+<button class="hamburger" onclick="openSideMenu()"><span></span><span></span><span></span></button>
+</div>
+</div>
+</header>
+<!-- Page Hero -->
+<section class="page-hero">
+<div class="container page-hero__content">
+<div class="page-hero__tag"><i class="fa-solid fa-truck-fast"></i> <span data-i18n="services_hero_tag">Our Services</span></div>
+<h1 class="page-hero__title" data-i18n="services_hero_title">Complete Logistics Solutions</h1>
+<p class="page-hero__subtitle" data-i18n="services_hero_subtitle">From air express to land freight, sea containers to specialized Shein deliveries — we have you covered on the Dubai–Erbil corridor.</p>
+</div>
+</section>
+<!-- Services Detail -->
+<section class="section" style="background:var(--off-white); padding-bottom:0;">
+<div class="container">
+<!-- Air Freight -->
+<div class="service-detail" id="air" style="border-bottom:1px solid var(--gray-200);">
+<div class="service-detail__image reveal--left reveal">
+<img alt="Express Air Freight Dubai to Erbil" src="images/cargo-plane-sunset.jpg"/>
+</div>
+<div class="reveal--right reveal">
+<div class="service-detail__icon-large"><i class="fa-solid fa-plane-departure"></i></div>
+<div class="section-tag" style="margin-bottom:16px;" data-i18n="srv_air_tag">Air Freight</div>
+<h2 data-i18n="srv_air_title">Express Air Freight<br/>Dubai → Erbil in 24–48 hrs</h2>
+<p data-i18n="srv_air_desc">Our air freight service is the fastest way to move cargo between Dubai and Erbil. We partner with leading airlines and cargo operators to ensure your shipment gets priority handling from pickup to final delivery.</p>
+<div class="service-feature-list">
+<div class="service-feature-item"><i class="fa-solid fa-circle-check"></i> <span data-i18n="srv_air_f1">24–48 hour transit time Dubai to Erbil</span></div>
+<div class="service-feature-item"><i class="fa-solid fa-circle-check"></i> <span data-i18n="srv_air_f2">Real-time flight tracking</span></div>
+<div class="service-feature-item"><i class="fa-solid fa-circle-check"></i> <span data-i18n="srv_air_f3">Temperature-controlled options for sensitive goods</span></div>
+<div class="service-feature-item"><i class="fa-solid fa-circle-check"></i> <span data-i18n="srv_air_f4">Priority customs clearance both ends</span></div>
+<div class="service-feature-item"><i class="fa-solid fa-circle-check"></i> <span data-i18n="srv_air_f5">Door-to-door delivery available</span></div>
+<div class="service-feature-item"><i class="fa-solid fa-circle-check"></i> <span data-i18n="srv_air_f6">Full cargo insurance included</span></div>
+</div>
+<a class="btn btn--primary btn--lg" href="contact.html"><span data-i18n="srv_air_btn">Get Air Freight Quote</span> <i class="fa-solid fa-arrow-right"></i></a>
+</div>
+</div>
+<!-- Land Freight -->
+<div class="service-detail" id="land" style="border-bottom:1px solid var(--gray-200);">
+<div class="reveal--right reveal">
+<div class="service-detail__icon-large" style="background:linear-gradient(135deg, var(--cyan-600), var(--blue-500));"><i class="fa-solid fa-truck-fast"></i></div>
+<div class="section-tag" style="margin-bottom:16px;" data-i18n="srv_land_tag">Land Freight</div>
+<h2 data-i18n="srv_land_title">Road Transport<br/><span style="color:var(--purple-600);">from $1.25/kg</span></h2>
+<p data-i18n="srv_land_desc">Our most popular service — direct overland trucking from Dubai to Erbil. The most cost-effective solution for regular and bulk shipments. No middlemen, no surprises.</p>
+<div class="service-feature-list">
+<div class="service-feature-item"><i class="fa-solid fa-circle-check"></i> <span data-i18n="srv_land_f1">Starts at just $1.25 per kilogram</span></div>
+<div class="service-feature-item"><i class="fa-solid fa-circle-check"></i> <span data-i18n="srv_land_f2">5–7 day transit time</span></div>
+<div class="service-feature-item"><i class="fa-solid fa-circle-check"></i> <span data-i18n="srv_land_f3">Shein &amp; e-commerce package specialization</span></div>
+<div class="service-feature-item"><i class="fa-solid fa-circle-check"></i> <span data-i18n="srv_land_f4">Auto parts — special protective packaging</span></div>
+<div class="service-feature-item"><i class="fa-solid fa-circle-check"></i> <span data-i18n="srv_land_f5">GPS-tracked vehicles throughout journey</span></div>
+<div class="service-feature-item"><i class="fa-solid fa-circle-check"></i> <span data-i18n="srv_land_f6">Volume discounts for regular shippers</span></div>
+</div>
+<a class="btn btn--primary btn--lg" href="contact.html"><span data-i18n="srv_land_btn">Get Land Freight Quote</span> <i class="fa-solid fa-arrow-right"></i></a>
+</div>
+<div class="service-detail__image reveal--right reveal" style="order:1;">
+<img alt="Land Road Freight Dubai to Erbil" src="images/traffic-highway.jpg"/>
+</div>
+</div>
+<!-- Sea Freight -->
+<div class="service-detail" id="sea" style="border-bottom:1px solid var(--gray-200);">
+<div class="service-detail__image reveal--left reveal">
+<img alt="Sea Freight Container Shipping" src="images/container.jpg"/>
+</div>
+<div class="reveal--right reveal">
+<div class="service-detail__icon-large" style="background:linear-gradient(135deg, #0369a1, #06b6d4);"><i class="fa-solid fa-ship"></i></div>
+<div class="section-tag" style="margin-bottom:16px;" data-i18n="srv_sea_tag">Sea Freight</div>
+<h2 data-i18n="srv_sea_title">Container Shipping &amp; Port Logistics</h2>
+<p data-i18n="srv_sea_desc">For large-volume shipments, our sea freight solutions provide the most economical option. We work with Jebel Ali Port (Dubai) for FCL and LCL shipments bound for Iraq.</p>
+<div class="service-feature-list">
+<div class="service-feature-item"><i class="fa-solid fa-circle-check"></i> <span data-i18n="srv_sea_f1">Full Container Load (FCL) — 20ft &amp; 40ft</span></div>
+<div class="service-feature-item"><i class="fa-solid fa-circle-check"></i> <span data-i18n="srv_sea_f2">Less than Container Load (LCL) / Groupage</span></div>
+<div class="service-feature-item"><i class="fa-solid fa-circle-check"></i> <span data-i18n="srv_sea_f3">Jebel Ali Port operations expertise</span></div>
+<div class="service-feature-item"><i class="fa-solid fa-circle-check"></i> <span data-i18n="srv_sea_f4">Iraqi port and customs clearance handled</span></div>
+<div class="service-feature-item"><i class="fa-solid fa-circle-check"></i> <span data-i18n="srv_sea_f5">Best for heavy machinery, bulk goods, vehicles</span></div>
+</div>
+<a class="btn btn--primary btn--lg" href="contact.html"><span data-i18n="srv_sea_btn">Get Sea Freight Quote</span> <i class="fa-solid fa-arrow-right"></i></a>
+</div>
+</div>
+<!-- Shein & Auto Parts -->
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:32px; padding-block:80px;">
+<!-- Shein -->
+<div class="reveal" id="shein" style="background:linear-gradient(135deg, rgba(236,72,153,0.06), rgba(168,85,247,0.04)); border:1px solid rgba(236,72,153,0.15); border-radius:var(--radius-2xl); padding:48px 36px;">
+<div style="width:64px; height:64px; border-radius:var(--radius-xl); background:linear-gradient(135deg, #ec4899, #a855f7); display:flex; align-items:center; justify-content:center; font-size:1.5rem; color:var(--white); margin-bottom:24px;">
+<i class="fa-solid fa-shirt"></i>
+</div>
+<h3 style="font-family:var(--font-display); font-size:1.4rem; font-weight:800; color:var(--gray-900); margin-bottom:12px;" data-i18n="srv_shein_title">Shein Package Deliveries</h3>
+<p style="color:var(--gray-500); line-height:1.75; margin-bottom:24px;" data-i18n="srv_shein_desc">Order from Shein to our Dubai warehouse address. We consolidate, declare, and deliver your packages to Erbil. The easiest Shein-to-Erbil solution available.</p>
+<div class="service-feature-list" style="margin-bottom:28px;">
+<div class="service-feature-item"><i class="fa-solid fa-circle-check"></i> <span data-i18n="srv_shein_f1">Use our Dubai address for Shein orders</span></div>
+<div class="service-feature-item"><i class="fa-solid fa-circle-check"></i> <span data-i18n="srv_shein_f2">Package consolidation saves on shipping</span></div>
+<div class="service-feature-item"><i class="fa-solid fa-circle-check"></i> <span data-i18n="srv_shein_f3">Duties &amp; customs handled by Dargol</span></div>
+<div class="service-feature-item"><i class="fa-solid fa-circle-check"></i> <span data-i18n="srv_shein_f4">WhatsApp notifications at every step</span></div>
+</div>
+<a class="btn btn--primary" href="contact.html"><span data-i18n="srv_shein_btn">Start Shein Delivery</span> <i class="fa-solid fa-arrow-right"></i></a>
+</div>
+<!-- Auto Parts -->
+<div class="reveal reveal--delay-2" id="autoparts" style="background:linear-gradient(135deg, rgba(16,185,129,0.06), rgba(6,182,212,0.04)); border:1px solid rgba(16,185,129,0.2); border-radius:var(--radius-2xl); padding:48px 36px;">
+<div style="width:64px; height:64px; border-radius:var(--radius-xl); background:linear-gradient(135deg, #10b981, #06b6d4); display:flex; align-items:center; justify-content:center; font-size:1.5rem; color:var(--white); margin-bottom:24px;">
+<i class="fa-solid fa-gear"></i>
+</div>
+<h3 style="font-family:var(--font-display); font-size:1.4rem; font-weight:800; color:var(--gray-900); margin-bottom:12px;" data-i18n="srv_auto_title">Auto Parts Transport</h3>
+<p style="color:var(--gray-500); line-height:1.75; margin-bottom:24px;" data-i18n="srv_auto_desc">Specialized packing and transportation for all automotive parts — engines, chassis, electronic components, and accessories. Zero-damage guarantee.</p>
+<div class="service-feature-list" style="margin-bottom:28px;">
+<div class="service-feature-item"><i class="fa-solid fa-circle-check"></i> <span data-i18n="srv_auto_f1">Industrial protective packaging materials</span></div>
+<div class="service-feature-item"><i class="fa-solid fa-circle-check"></i> <span data-i18n="srv_auto_f2">Full cargo insurance for every shipment</span></div>
+<div class="service-feature-item"><i class="fa-solid fa-circle-check"></i> <span data-i18n="srv_auto_f3">Experienced auto parts handlers</span></div>
+<div class="service-feature-item"><i class="fa-solid fa-circle-check"></i> <span data-i18n="srv_auto_f4">UAE import documentation support</span></div>
+</div>
+<a class="btn btn--primary" href="contact.html"><span data-i18n="srv_auto_btn">Ship Auto Parts</span> <i class="fa-solid fa-arrow-right"></i></a>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA -->
+<section class="cta-banner">
+<div class="cta-banner__bg"></div>
+<div class="container">
+<div class="cta-banner__content">
+<h2 data-i18n="cta_title">Ready to Ship?</h2>
+<p data-i18n="cta_subtitle">Get a free, no-obligation quote in minutes. Our logistics experts are standing by.</p>
+<div class="cta-banner__actions">
+<a class="btn btn--white btn--lg" href="contact.html" data-i18n="cta_btn1">Get Free Quote</a>
+<a class="btn btn--glass-white btn--lg" href="https://wa.me/971504157900" target="_blank">
+<i class="fa-brands fa-whatsapp"></i> <span data-i18n="cta_btn2">WhatsApp Us</span>
+          </a>
+</div>
+</div>
+</div>
+</section>
+<footer class="footer">
+<div class="footer__main container">
+<div class="footer__brand">
+<img alt="Dargol Logistics" class="footer__logo" src="images/dargollogistics.PNG"/>
+<p data-i18n="footer_about">Your trusted logistics partner between the UAE and Iraq.</p>
+<div class="footer__socials">
+<a href="https://wa.me/971504157900" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+<a href="https://www.facebook.com/share/1GXfdihBxV/?mibextid=wwXIfr" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+<a href="https://www.instagram.com/dargollogistics?igsh=M21uc2piYWtsaDI0" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+</div>
+</div>
+<div class="footer__links">
+<h4 data-i18n="footer_quick">Quick Links</h4>
+<ul>
+<li><a data-i18n="nav_home" href="index.html">Home</a></li>
+<li><a data-i18n="nav_about" href="about.html">About Us</a></li>
+<li><a data-i18n="nav_services" href="services.html">Services</a></li>
+<li><a href="tracking.html"><i class="fa-solid fa-mobile-screen"></i> Get the App</a></li>
+<li><a data-i18n="nav_contact" href="contact.html">Contact</a></li>
+</ul>
+</div>
+<div class="footer__contact">
+<h4 data-i18n="footer_contact">Contact Us</h4>
+<div class="footer__contact-item"><i class="fa-solid fa-location-dot"></i><span data-i18n="footer_addr1">Dubai, UAE</span></div>
+<div class="footer__contact-item"><i class="fa-solid fa-location-dot"></i><span data-i18n="footer_addr2">Gazna Road, Erbil, Iraq</span></div>
+<a class="footer__contact-item footer__contact-item--link" href="tel:+971504157900"><i class="fa-solid fa-phone"></i><span>+971 50 415 7900</span></a>
+</div>
+</div>
+<div class="footer__bottom">
+<div class="container">
+<p>© 2026 Dargol Logistics. All rights reserved.</p>
+<div class="footer__bottom-links"><a href="privacy.html">Privacy Policy</a></div>
+</div>
+</div>
+</footer>
+<button class="back-to-top" id="backToTop" onclick="scrollToTop()"><i class="fa-solid fa-chevron-up"></i></button>
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
+
+

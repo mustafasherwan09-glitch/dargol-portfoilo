@@ -1,0 +1,582 @@
+﻿<!DOCTYPE html>
+
+<html dir="ltr" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Download the App – Dargol Logistics</title>
+<meta content="Download the Dargol Logistics app on iOS or Android to track your shipments live, manage orders, and get real-time updates." name="description"/>
+<link href="dargollogistics.PNG" rel="icon" type="image/png"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;family=Outfit:wght@300;400;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<style>
+    /* ── App Download Page Exclusive Styles ── */
+    .app-hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      background: linear-gradient(145deg, var(--gray-900) 0%, var(--purple-900) 45%, var(--navy-dark) 100%);
+      position: relative;
+      overflow: hidden;
+      padding-top: var(--navbar-h);
+    }
+    .app-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 70% 70% at 80% 40%, rgba(124,58,237,0.28), transparent),
+        radial-gradient(ellipse 50% 50% at 10% 70%, rgba(6,182,212,0.18), transparent),
+        radial-gradient(ellipse 40% 40% at 50% 90%, rgba(91,33,182,0.15), transparent);
+      pointer-events: none;
+    }
+
+    /* Animated grid lines */
+    .app-hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(124,58,237,0.06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(124,58,237,0.06) 1px, transparent 1px);
+      background-size: 60px 60px;
+      pointer-events: none;
+      mask-image: radial-gradient(ellipse at center, black 30%, transparent 80%);
+    }
+
+    .app-hero__inner {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .app-hero__left {}
+
+    .app-hero__badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(124,58,237,0.2);
+      border: 1px solid rgba(124,58,237,0.45);
+      color: var(--purple-300);
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      padding: 6px 16px;
+      border-radius: var(--radius-full);
+      margin-bottom: 28px;
+    }
+
+    .app-hero__title {
+      font-family: var(--font-display);
+      font-size: clamp(2.4rem, 5vw, 3.8rem);
+      font-weight: 900;
+      color: var(--white);
+      line-height: 1.12;
+      margin-bottom: 20px;
+    }
+    .app-hero__title span {
+      background: linear-gradient(135deg, var(--purple-400), var(--cyan-400));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .app-hero__subtitle {
+      font-size: 1.1rem;
+      color: rgba(255,255,255,0.68);
+      line-height: 1.75;
+      max-width: 500px;
+      margin-bottom: 48px;
+    }
+
+    /* Store Buttons */
+    .store-buttons {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+    .store-btn {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      background: rgba(255,255,255,0.08);
+      border: 1.5px solid rgba(255,255,255,0.18);
+      border-radius: var(--radius-xl);
+      padding: 14px 28px;
+      color: var(--white);
+      text-decoration: none;
+      backdrop-filter: blur(12px);
+      transition: all var(--transition);
+      min-width: 200px;
+    }
+    .store-btn:hover {
+      background: rgba(255,255,255,0.14);
+      border-color: rgba(255,255,255,0.35);
+      transform: translateY(-3px);
+      box-shadow: 0 16px 40px rgba(0,0,0,0.35);
+    }
+    .store-btn--ios { background: rgba(0,0,0,0.45); border-color: rgba(255,255,255,0.2); }
+    .store-btn--android { background: rgba(1,135,84,0.25); border-color: rgba(1,135,84,0.45); }
+    .store-btn--ios:hover { background: rgba(0,0,0,0.6); }
+    .store-btn--android:hover { background: rgba(1,135,84,0.4); }
+
+    .store-btn__icon { font-size: 2.2rem; flex-shrink: 0; }
+    .store-btn__text { display: flex; flex-direction: column; }
+    .store-btn__sub { font-size: 0.68rem; font-weight: 500; opacity: 0.7; text-transform: uppercase; letter-spacing: 0.06em; }
+    .store-btn__name { font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; }
+
+    /* Stat pills */
+    .app-stats {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .app-stat {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: var(--radius-full);
+      padding: 8px 16px;
+      color: rgba(255,255,255,0.8);
+      font-size: 0.82rem;
+    }
+    .app-stat i { color: var(--cyan-400); font-size: 0.85rem; }
+    .app-stat strong { color: var(--white); }
+
+    /* Mockup / Real Screenshot */
+    .app-hero__right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+    .phone-mockup {
+      position: relative;
+      width: 300px;
+      animation: float 4s ease-in-out infinite;
+    }
+    .phone-mockup__screenshot {
+      width: 100%;
+      height: auto;
+      border-radius: 42px;
+      box-shadow:
+        0 40px 80px rgba(0,0,0,0.55),
+        0 0 0 1px rgba(255,255,255,0.08),
+        0 0 60px rgba(124,58,237,0.25);
+      display: block;
+    }
+
+    /* Floating glow orbs around phone */
+    .phone-glow {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(40px);
+      pointer-events: none;
+    }
+    .phone-glow--purple {
+      width: 200px; height: 200px;
+      background: rgba(124,58,237,0.3);
+      top: -40px; left: -60px;
+    }
+    .phone-glow--cyan {
+      width: 160px; height: 160px;
+      background: rgba(6,182,212,0.25);
+      bottom: 20px; right: -50px;
+    }
+
+
+    /* ── Features Grid ── */
+    .app-features {
+      padding-block: 96px;
+      background: var(--off-white);
+    }
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .feature-card {
+      background: var(--white);
+      border: 1px solid var(--gray-200);
+      border-radius: var(--radius-xl);
+      padding: 32px 28px;
+      transition: all var(--transition);
+    }
+    .feature-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--purple-300);
+    }
+    .feature-card__icon {
+      width: 56px;
+      height: 56px;
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+      color: var(--white);
+      margin-bottom: 20px;
+    }
+    .feature-card__title {
+      font-family: var(--font-display);
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--gray-900);
+      margin-bottom: 8px;
+    }
+    .feature-card__desc {
+      font-size: 0.875rem;
+      color: var(--gray-500);
+      line-height: 1.7;
+    }
+
+    /* ── QR Section ── */
+    .qr-section {
+      padding-block: 80px;
+      background: linear-gradient(135deg, var(--gray-900), var(--purple-900));
+    }
+    .qr-inner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 64px;
+      flex-wrap: wrap;
+    }
+    .qr-card {
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: var(--radius-2xl);
+      padding: 36px;
+      text-align: center;
+      color: var(--white);
+      backdrop-filter: blur(12px);
+      transition: all var(--transition);
+      min-width: 220px;
+    }
+    .qr-card:hover {
+      background: rgba(255,255,255,0.12);
+      transform: translateY(-4px);
+    }
+    .qr-icon {
+      font-size: 3rem;
+      margin-bottom: 16px;
+      display: block;
+    }
+    .qr-card h3 {
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+    .qr-card p {
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.6);
+      margin-bottom: 24px;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 1024px) {
+      .app-hero__inner { grid-template-columns: 1fr; gap: 48px; text-align: center; }
+      .app-hero__subtitle { margin-inline: auto; }
+      .store-buttons { justify-content: center; }
+      .app-stats { justify-content: center; }
+      .phone-mockup { width: 240px; }
+      .phone-mockup__frame { width: 240px; height: 480px; }
+      .features-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 640px) {
+      .store-buttons { flex-direction: column; align-items: stretch; }
+      .store-btn { justify-content: center; }
+      .features-grid { grid-template-columns: 1fr; }
+      .phone-mockup { display: none; }
+    }
+  </style>
+</link></link></head>
+<body class="page-download" data-lang="en">
+<div class="side-overlay" id="sideOverlay" onclick="closeSideMenu()"></div>
+<aside aria-label="Side navigation" class="side-menu" id="sideMenu">
+<div class="side-menu__header">
+<img alt="Dargol Logistics Logo" class="side-menu__logo" src="images/dargollogistics.PNG"/>
+<button aria-label="Close menu" class="side-menu__close" onclick="closeSideMenu()"><i class="fa-solid fa-xmark"></i></button>
+</div>
+<nav class="side-menu__nav">
+<a class="side-nav-link" data-i18n="nav_home" href="index.html"><i class="fa-solid fa-house"></i><span>Home</span></a>
+<a class="side-nav-link" data-i18n="nav_about" href="about.html"><i class="fa-solid fa-building"></i><span>About Us</span></a>
+<a class="side-nav-link" data-i18n="nav_services" href="services.html"><i class="fa-solid fa-truck-fast"></i><span>Services</span></a>
+<a class="side-nav-link active" data-i18n="nav_download" href="download.html"><i class="fa-solid fa-mobile-screen"></i><span>Download App</span></a>
+<a class="side-nav-link" data-i18n="nav_blog" href="blog.html"><i class="fa-solid fa-newspaper"></i><span>Blog</span></a>
+<a class="side-nav-link" data-i18n="nav_contact" href="contact.html"><i class="fa-solid fa-envelope"></i><span>Get In Touch</span></a>
+<a class="side-nav-link" data-i18n="nav_survey" href="survey.html"><i class="fa-solid fa-clipboard-list"></i><span>App Survey</span></a>
+<a class="side-nav-link" data-i18n="nav_privacy" href="privacy.html"><i class="fa-solid fa-shield-halved"></i><span>Privacy Policy</span></a>
+</nav>
+<div class="side-menu__contacts">
+<a class="wa-link" href="https://wa.me/971504157900" target="_blank"><i class="fa-brands fa-whatsapp"></i> +971 50 415 7900</a>
+<a class="wa-link" href="https://wa.me/9647513077900" target="_blank"><i class="fa-brands fa-whatsapp"></i> +964 751 307 7900</a>
+</div>
+    <!-- Language Switcher — bottom of side menu, text-only -->
+    <div class="lang-switcher" id="sideLangSwitcher">
+      <p class="lang-switcher__label" data-i18n="change_language">Language</p>
+      <div class="lang-switcher__buttons">
+        <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+        <button class="lang-btn" data-lang="ku" onclick="switchLang('ku')">کوردی</button>
+        <button class="lang-btn" data-lang="ar" onclick="switchLang('ar')">العربية</button>
+      </div>
+    </div>
+</aside>
+<!-- Navbar -->
+<header class="navbar" id="mainNavbar">
+<div class="navbar__inner container">
+<a class="navbar__brand" href="index.html">
+<img alt="Dargol Logistics" class="navbar__logo" src="images/dargollogistics.PNG"/>
+<span class="navbar__name">DARGOL <span>LOGISTICS</span></span>
+</a>
+<nav class="navbar__links">
+<a class="nav-link" data-i18n="nav_home" href="index.html">Home</a>
+<a class="nav-link" data-i18n="nav_about" href="about.html">About</a>
+<a class="nav-link" data-i18n="nav_services" href="services.html">Services</a>
+<a class="nav-link active" data-i18n="nav_download" href="download.html">Download App</a>
+<a class="nav-link" data-i18n="nav_blog" href="blog.html">Blog</a>
+<a class="nav-link" data-i18n="nav_contact" href="contact.html">Contact</a>
+</nav>
+<div class="navbar__actions">
+<a class="btn btn--primary btn--sm" data-i18n="nav_get_app" href="download.html"><i class="fa-solid fa-mobile-screen"></i> Get the App</a>
+        <div class="lang-dropdown" id="langDropdown">
+          <button class="lang-dropdown__toggle" id="langDropdownToggle" onclick="toggleLangDropdown()" aria-label="Change language">
+            <span id="langDropdownLabel">English</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="lang-dropdown__menu" id="langDropdownMenu">
+            <button class="lang-dropdown__item active" data-lang="en" onclick="switchLang('en');closeLangDropdown()">English</button>
+            <button class="lang-dropdown__item" data-lang="ku" onclick="switchLang('ku');closeLangDropdown()">کوردی</button>
+            <button class="lang-dropdown__item" data-lang="ar" onclick="switchLang('ar');closeLangDropdown()">العربية</button>
+          </div>
+        </div>
+<button class="hamburger" onclick="openSideMenu()"><span></span><span></span><span></span></button>
+</div>
+</div>
+</header>
+<!-- ═══ APP HERO ═══ -->
+<section class="app-hero">
+<div class="container">
+<div class="app-hero__inner">
+<!-- Left content -->
+<div class="app-hero__left">
+<div class="app-hero__badge">
+<i class="fa-solid fa-mobile-screen"></i> <span data-i18n="dl_hero_badge">Now Available</span>
+          </div>
+<h1 class="app-hero__title" data-i18n="dl_hero_title">
+            Track Your Shipment<br/>
+<span>Live — In Your Pocket</span>
+</h1>
+<p class="app-hero__subtitle" data-i18n="dl_hero_subtitle">
+            Download the Dargol Logistics app to create an account, track your shipments in real time, receive instant notifications, and manage all your freight from Dubai to Erbil — right from your phone.
+          </p>
+<!-- Store Buttons -->
+<div class="store-buttons">
+<a class="store-btn store-btn--ios" href="https://apps.apple.com/iq/app/dargol-logistics/id6765804673" id="appStoreBtn" rel="noopener" target="_blank">
+<span class="store-btn__icon"><i class="fa-brands fa-apple"></i></span>
+<span class="store-btn__text">
+<span class="store-btn__sub" data-i18n="dl_store_ios_sub">Download on the</span>
+<span class="store-btn__name">App Store</span>
+</span>
+</a>
+<a class="store-btn store-btn--android" href="https://play.google.com/store/apps/details?id=com.dargol.logistics&amp;hl=en" id="playStoreBtn" rel="noopener" target="_blank">
+<span class="store-btn__icon"><i class="fa-brands fa-google-play"></i></span>
+<span class="store-btn__text">
+<span class="store-btn__sub" data-i18n="dl_store_and_sub">Get it on</span>
+<span class="store-btn__name">Google Play</span>
+</span>
+</a>
+</div>
+<!-- Quick stats -->
+<div class="app-stats">
+<div class="app-stat"><i class="fa-solid fa-star"></i> <strong data-i18n="dl_stat_rate1">4.8</strong> <span data-i18n="dl_stat_rate2">App Rating</span></div>
+<div class="app-stat"><i class="fa-solid fa-download"></i> <strong data-i18n="dl_stat_dl1">5K+</strong> <span data-i18n="dl_stat_dl2">Downloads</span></div>
+<div class="app-stat"><i class="fa-solid fa-shield-halved"></i> <span data-i18n="dl_stat_free">Free to Download</span></div>
+</div>
+        </div>
+        <!-- Right: Real App Screenshot -->
+        <div class="app-hero__right">
+          <div class="phone-glow phone-glow--purple"></div>
+          <div class="phone-glow phone-glow--cyan"></div>
+          <div class="phone-mockup">
+            <img
+              src="images/IMG_2004.PNG"
+              alt="Dargol Logistics App – My Shipments Screen"
+              class="phone-mockup__screenshot"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<!-- ═══ APP FEATURES ═══ -->
+<section class="app-features">
+<div class="container">
+<div class="section-header">
+<div class="section-tag"><i class="fa-solid fa-stars"></i> <span data-i18n="dl_feat_tag">App Features</span></div>
+<h2 class="section-title" data-i18n="dl_feat_title">Everything You Need, in One App</h2>
+<p class="section-subtitle" data-i18n="dl_feat_subtitle">The Dargol Logistics app puts full control of your freight at your fingertips.</p>
+</div>
+<div class="features-grid">
+<div class="feature-card reveal">
+<div class="feature-card__icon" style="background: var(--gradient-primary); box-shadow: var(--shadow-purple);">
+<i class="fa-solid fa-location-dot"></i>
+</div>
+<div class="feature-card__title" data-i18n="dl_feat1_title">Live GPS Shipment Tracking</div>
+<div class="feature-card__desc" data-i18n="dl_feat1_desc">See exactly where your cargo is at every moment — from Dubai warehouse to your door in Erbil. Updated every 2 hours on the route.</div>
+</div>
+<div class="feature-card reveal reveal--delay-1">
+<div class="feature-card__icon" style="background: linear-gradient(135deg, var(--cyan-600), var(--blue-500)); box-shadow: var(--shadow-cyan);">
+<i class="fa-solid fa-bell"></i>
+</div>
+<div class="feature-card__title" data-i18n="dl_feat2_title">Instant Push Notifications</div>
+<div class="feature-card__desc" data-i18n="dl_feat2_desc">Get notified the moment your shipment clears customs, crosses the border, or reaches Erbil — before you even ask.</div>
+</div>
+<div class="feature-card reveal reveal--delay-2">
+<div class="feature-card__icon" style="background: linear-gradient(135deg, #0f766e, #0891b2);">
+<i class="fa-solid fa-user-circle"></i>
+</div>
+<div class="feature-card__title" data-i18n="dl_feat3_title">Personal Account Dashboard</div>
+<div class="feature-card__desc" data-i18n="dl_feat3_desc">Register once, manage everything. View all your shipments, history, invoices, and contact our team — all from your profile.</div>
+</div>
+<div class="feature-card reveal reveal--delay-3">
+<div class="feature-card__icon" style="background: linear-gradient(135deg, #9333ea, #ec4899);">
+<i class="fa-solid fa-comments"></i>
+</div>
+<div class="feature-card__title" data-i18n="dl_feat4_title">In-App Support Chat</div>
+<div class="feature-card__desc" data-i18n="dl_feat4_desc">Message our Dubai or Erbil team directly inside the app. No need to switch to WhatsApp — support is built in.</div>
+</div>
+<div class="feature-card reveal reveal--delay-4">
+<div class="feature-card__icon" style="background: linear-gradient(135deg, #d97706, #f59e0b);">
+<i class="fa-solid fa-file-invoice"></i>
+</div>
+<div class="feature-card__title" data-i18n="dl_feat5_title">Digital Bills &amp; Documents</div>
+<div class="feature-card__desc" data-i18n="dl_feat5_desc">Access your Bill of Lading, customs declarations, and invoices instantly. Download or share them directly from the app.</div>
+</div>
+<div class="feature-card reveal reveal--delay-5">
+<div class="feature-card__icon" style="background: linear-gradient(135deg, #16a34a, #059669);">
+<i class="fa-solid fa-boxes-stacked"></i>
+</div>
+<div class="feature-card__title" data-i18n="dl_feat6_title">Multi-Shipment Dashboard</div>
+<div class="feature-card__desc" data-i18n="dl_feat6_desc">Tracking multiple packages? See all your active shipments on one screen. Perfect for businesses and regular Shein shoppers.</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ═══ HOW IT WORKS ═══ -->
+<section class="section">
+<div class="container">
+<div class="section-header">
+<div class="section-tag"><i class="fa-solid fa-list-ol"></i> <span data-i18n="dl_step_tag">Get Started</span></div>
+<h2 class="section-title" data-i18n="dl_step_title">How It Works</h2>
+<p class="section-subtitle" data-i18n="dl_step_subtitle">Tracking your Dargol shipment is easy. Three steps and you're live.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px;">
+<div class="reveal" style="text-align: center; padding: 40px 28px;">
+<div style="width: 72px; height: 72px; border-radius: 50%; background: var(--gradient-primary); color: var(--white); font-family: var(--font-display); font-size: 1.5rem; font-weight: 900; display: flex; align-items: center; justify-content: center; margin: 0 auto 24px; box-shadow: var(--shadow-purple);">1</div>
+<h3 style="font-family: var(--font-display); font-size: 1.15rem; font-weight: 800; color: var(--gray-900); margin-bottom: 10px;" data-i18n="dl_step1_title">Download the App</h3>
+<p style="font-size: 0.875rem; color: var(--gray-500); line-height: 1.7;" data-i18n="dl_step1_desc">Get the Dargol Logistics app free from the App Store (iOS) or Google Play (Android).</p>
+</div>
+<div class="reveal reveal--delay-2" style="text-align: center; padding: 40px 28px;">
+<div style="width: 72px; height: 72px; border-radius: 50%; background: linear-gradient(135deg, var(--cyan-600), var(--blue-500)); color: var(--white); font-family: var(--font-display); font-size: 1.5rem; font-weight: 900; display: flex; align-items: center; justify-content: center; margin: 0 auto 24px; box-shadow: var(--shadow-cyan);">2</div>
+<h3 style="font-family: var(--font-display); font-size: 1.15rem; font-weight: 800; color: var(--gray-900); margin-bottom: 10px;" data-i18n="dl_step2_title">Create Your Account</h3>
+<p style="font-size: 0.875rem; color: var(--gray-500); line-height: 1.7;" data-i18n="dl_step2_desc">Register with your phone number and name. It takes less than a minute to set up your Dargol account.</p>
+</div>
+<div class="reveal reveal--delay-4" style="text-align: center; padding: 40px 28px;">
+<div style="width: 72px; height: 72px; border-radius: 50%; background: linear-gradient(135deg, #16a34a, #0891b2); color: var(--white); font-family: var(--font-display); font-size: 1.5rem; font-weight: 900; display: flex; align-items: center; justify-content: center; margin: 0 auto 24px;">3</div>
+<h3 style="font-family: var(--font-display); font-size: 1.15rem; font-weight: 800; color: var(--gray-900); margin-bottom: 10px;" data-i18n="dl_step3_title">Track Live</h3>
+<p style="font-size: 0.875rem; color: var(--gray-500); line-height: 1.7;" data-i18n="dl_step3_desc">See all your shipments live. Get alerts, chat with our team, and manage your freight end-to-end.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- ═══ DOWNLOAD CTA SECTION ═══ -->
+<section class="qr-section">
+<div class="container">
+<div style="text-align: center; margin-bottom: 56px;">
+<div class="section-tag" style="background: rgba(124,58,237,0.2); border-color: rgba(124,58,237,0.4); color: var(--purple-300);" data-i18n="dl_cta_tag">Download Now — It's Free</div>
+<h2 style="font-family: var(--font-display); font-size: 2.4rem; font-weight: 900; color: var(--white); margin-bottom: 12px;" data-i18n="dl_cta_title">Get the Dargol App Today</h2>
+<p style="color: rgba(255,255,255,0.6); max-width: 500px; margin: 0 auto; font-size: 1rem; line-height: 1.7;" data-i18n="dl_cta_desc">Available on iPhone and Android. Free to download, free to use. Create your account and start tracking in minutes.</p>
+</div>
+<div class="qr-inner">
+<div class="qr-card">
+<span class="qr-icon"><i class="fa-brands fa-apple"></i></span>
+<h3 data-i18n="dl_cta_ios_title">iOS — App Store</h3>
+<p data-i18n="dl_cta_ios_desc">For iPhone and iPad users. Download from the Apple App Store.</p>
+<a class="btn btn--primary" href="https://apps.apple.com/iq/app/dargol-logistics/id6765804673" rel="noopener" style="width: 100%; justify-content: center;" target="_blank">
+<i class="fa-brands fa-apple"></i> <span data-i18n="dl_cta_ios_btn">Download for iOS</span>
+          </a>
+</div>
+<div style="color: rgba(255,255,255,0.25); font-family: var(--font-display); font-size: 1rem; font-weight: 700;" data-i18n="dl_cta_or">OR</div>
+<div class="qr-card">
+<span class="qr-icon" style="color: #34a853;"><i class="fa-brands fa-google-play"></i></span>
+<h3 data-i18n="dl_cta_and_title">Android — Google Play</h3>
+<p data-i18n="dl_cta_and_desc">For all Android phones and tablets. Get it on Google Play Store.</p>
+<a class="btn btn--primary" href="https://play.google.com/store/apps/details?id=com.dargol.logistics&amp;hl=en" rel="noopener" style="width: 100%; justify-content: center; background: linear-gradient(135deg, #0f9d58, #0891b2);" target="_blank">
+<i class="fa-brands fa-google-play"></i> <span data-i18n="dl_cta_and_btn">Download for Android</span>
+          </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="footer">
+<div class="footer__main container">
+<div class="footer__brand">
+<img alt="Dargol Logistics" class="footer__logo" src="images/dargollogistics.PNG"/>
+<p data-i18n="footer_about">Your trusted logistics partner between the UAE and Iraq. Fast, safe, and reliable freight since 2017.</p>
+<div class="footer__socials">
+<a aria-label="WhatsApp" href="https://wa.me/971504157900" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+<a aria-label="Instagram" href="https://www.instagram.com/dargollogistics?igsh=M21uc2piYWtsaDI0" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+<a aria-label="Facebook" href="https://www.facebook.com/share/1GXfdihBxV/?mibextid=wwXIfr" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+</div>
+</div>
+<div class="footer__links">
+<h4 data-i18n="footer_quick">Quick Links</h4>
+<ul>
+<li><a data-i18n="nav_home" href="index.html">Home</a></li>
+<li><a data-i18n="nav_about" href="about.html">About Us</a></li>
+<li><a data-i18n="nav_services" href="services.html">Services</a></li>
+<li><a data-i18n="nav_download" href="download.html">Download App</a></li>
+<li><a data-i18n="nav_contact" href="contact.html">Contact</a></li>
+</ul>
+</div>
+<div class="footer__contact">
+<h4 data-i18n="footer_contact">Contact Us</h4>
+<div class="footer__contact-item"><i class="fa-solid fa-location-dot"></i><span data-i18n="footer_addr1">Dubai, United Arab Emirates</span></div>
+<div class="footer__contact-item"><i class="fa-solid fa-location-dot"></i><span data-i18n="footer_addr2">Gazna Road, Erbil, Iraq</span></div>
+<a class="footer__contact-item footer__contact-item--link" href="tel:+971504157900"><i class="fa-solid fa-phone"></i><span>+971 50 415 7900</span></a>
+<a class="footer__contact-item footer__contact-item--link" href="tel:+9647513077900"><i class="fa-solid fa-phone"></i><span>+964 751 307 7900</span></a>
+</div>
+</div>
+<div class="footer__bottom">
+<div class="container">
+<p>© 2026 Dargol Logistics. All rights reserved.</p>
+<div class="footer__bottom-links">
+<a href="privacy.html">Privacy Policy</a>
+<a href="survey.html">App Survey</a>
+</div>
+</div>
+</div>
+</footer>
+<button class="back-to-top" id="backToTop" onclick="scrollToTop()"><i class="fa-solid fa-chevron-up"></i></button>
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
+
+

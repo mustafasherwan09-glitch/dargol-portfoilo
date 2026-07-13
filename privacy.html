@@ -1,0 +1,251 @@
+﻿<!DOCTYPE html>
+
+<html dir="ltr" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Privacy Policy – Dargol Logistics</title>
+<meta content="Dargol Logistics privacy policy — how we collect, use, and protect your personal data, cargo information, and terms of service." name="description"/>
+<link href="dargollogistics.PNG" rel="icon" type="image/png"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;family=Outfit:wght@300;400;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+</link></link></head>
+<body class="page-privacy" data-lang="en">
+<div class="side-overlay" id="sideOverlay" onclick="closeSideMenu()"></div>
+<aside class="side-menu" id="sideMenu">
+<div class="side-menu__header">
+<img alt="Dargol Logistics" class="side-menu__logo" src="images/dargollogistics.PNG"/>
+<button class="side-menu__close" onclick="closeSideMenu()"><i class="fa-solid fa-xmark"></i></button>
+</div>
+<nav class="side-menu__nav">
+<a class="side-nav-link" data-i18n="nav_home" href="index.html"><i class="fa-solid fa-house"></i><span>Home</span></a>
+<a class="side-nav-link" data-i18n="nav_about" href="about.html"><i class="fa-solid fa-building"></i><span>About Us</span></a>
+<a class="side-nav-link" data-i18n="nav_services" href="services.html"><i class="fa-solid fa-truck-fast"></i><span>Services</span></a>
+<a class="side-nav-link" data-i18n="nav_download" href="download.html"><i class="fa-solid fa-mobile-screen"></i><span>Download App</span></a>
+<a class="side-nav-link" data-i18n="nav_blog" href="blog.html"><i class="fa-solid fa-newspaper"></i><span>Blog</span></a>
+<a class="side-nav-link" data-i18n="nav_contact" href="contact.html"><i class="fa-solid fa-envelope"></i><span>Get In Touch</span></a>
+<a class="side-nav-link" data-i18n="nav_survey" href="survey.html"><i class="fa-solid fa-clipboard-list"></i><span>App Survey</span></a>
+<a class="side-nav-link active" data-i18n="nav_privacy" href="privacy.html"><i class="fa-solid fa-shield-halved"></i><span>Privacy Policy</span></a>
+</nav>
+<div class="side-menu__contacts">
+<a class="wa-link" href="https://wa.me/971504157900" target="_blank"><i class="fa-brands fa-whatsapp"></i> +971 50 415 7900</a>
+<a class="wa-link" href="https://wa.me/9647513077900" target="_blank"><i class="fa-brands fa-whatsapp"></i> +964 751 307 7900</a>
+</div>
+    <!-- Language Switcher — bottom of side menu, text-only -->
+    <div class="lang-switcher" id="sideLangSwitcher">
+      <p class="lang-switcher__label" data-i18n="change_language">Language</p>
+      <div class="lang-switcher__buttons">
+        <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+        <button class="lang-btn" data-lang="ku" onclick="switchLang('ku')">کوردی</button>
+        <button class="lang-btn" data-lang="ar" onclick="switchLang('ar')">العربية</button>
+      </div>
+    </div>
+</aside>
+<header class="navbar" id="mainNavbar">
+<div class="navbar__inner container">
+<a class="navbar__brand" href="index.html">
+<img alt="Dargol Logistics" class="navbar__logo" src="images/dargollogistics.PNG"/>
+<span class="navbar__name">DARGOL <span>LOGISTICS</span></span>
+</a>
+<nav class="navbar__links">
+<a class="nav-link" data-i18n="nav_home" href="index.html">Home</a>
+<a class="nav-link" data-i18n="nav_about" href="about.html">About</a>
+<a class="nav-link" data-i18n="nav_services" href="services.html">Services</a>
+<a class="nav-link" data-i18n="nav_download" href="download.html">Download App</a>
+<a class="nav-link" data-i18n="nav_blog" href="blog.html">Blog</a>
+<a class="nav-link" data-i18n="nav_contact" href="contact.html">Contact</a>
+</nav>
+<div class="navbar__actions">
+<a class="btn btn--primary btn--sm" data-i18n="nav_get_app" href="download.html"><i class="fa-solid fa-mobile-screen"></i> Get the App</a>
+        <div class="lang-dropdown" id="langDropdown">
+          <button class="lang-dropdown__toggle" id="langDropdownToggle" onclick="toggleLangDropdown()" aria-label="Change language">
+            <span id="langDropdownLabel">English</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="lang-dropdown__menu" id="langDropdownMenu">
+            <button class="lang-dropdown__item active" data-lang="en" onclick="switchLang('en');closeLangDropdown()">English</button>
+            <button class="lang-dropdown__item" data-lang="ku" onclick="switchLang('ku');closeLangDropdown()">کوردی</button>
+            <button class="lang-dropdown__item" data-lang="ar" onclick="switchLang('ar');closeLangDropdown()">العربية</button>
+          </div>
+        </div>
+<button class="hamburger" onclick="openSideMenu()"><span></span><span></span><span></span></button>
+</div>
+</div>
+</header>
+<!-- Page Hero -->
+<section class="page-hero">
+<div class="container page-hero__content">
+<div class="page-hero__tag"><i class="fa-solid fa-shield-halved"></i> <span data-i18n="priv_hero_tag">Legal</span></div>
+<h1 class="page-hero__title" data-i18n="priv_hero_title">Privacy Policy</h1>
+<p class="page-hero__subtitle" data-i18n="priv_hero_subtitle">Last updated: July 1, 2026 — How Dargol Logistics protects your data and manages cargo liability.</p>
+</div>
+</section>
+<!-- Privacy Content -->
+<section class="section" style="background:var(--off-white);">
+<div class="container">
+<div class="privacy-content">
+<!-- Table of Contents -->
+<div style="background:var(--white); border:1px solid var(--gray-200); border-radius:var(--radius-xl); padding:32px; margin-bottom:48px; box-shadow:var(--shadow-sm);">
+<h3 style="font-family:var(--font-display); font-size:1.05rem; font-weight:700; color:var(--gray-900); margin-bottom:16px;" data-i18n="priv_toc_title">Table of Contents</h3>
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:8px;">
+<a href="#data-collection" style="color:var(--purple-600); font-size:0.875rem; display:flex; align-items:center; gap:8px;"><i class="fa-solid fa-circle" style="font-size:0.4rem;"></i> <span data-i18n="priv_toc_1">1. Data Collection</span></a>
+<a href="#data-use" style="color:var(--purple-600); font-size:0.875rem; display:flex; align-items:center; gap:8px;"><i class="fa-solid fa-circle" style="font-size:0.4rem;"></i> <span data-i18n="priv_toc_2">2. How We Use Your Data</span></a>
+<a href="#data-sharing" style="color:var(--purple-600); font-size:0.875rem; display:flex; align-items:center; gap:8px;"><i class="fa-solid fa-circle" style="font-size:0.4rem;"></i> <span data-i18n="priv_toc_3">3. Data Sharing</span></a>
+<a href="#cargo-liability" style="color:var(--purple-600); font-size:0.875rem; display:flex; align-items:center; gap:8px;"><i class="fa-solid fa-circle" style="font-size:0.4rem;"></i> <span data-i18n="priv_toc_4">4. Cargo Liability</span></a>
+<a href="#data-security" style="color:var(--purple-600); font-size:0.875rem; display:flex; align-items:center; gap:8px;"><i class="fa-solid fa-circle" style="font-size:0.4rem;"></i> <span data-i18n="priv_toc_5">5. Data Security</span></a>
+<a href="#cookies" style="color:var(--purple-600); font-size:0.875rem; display:flex; align-items:center; gap:8px;"><i class="fa-solid fa-circle" style="font-size:0.4rem;"></i> <span data-i18n="priv_toc_6">6. Cookies</span></a>
+<a href="#terms" style="color:var(--purple-600); font-size:0.875rem; display:flex; align-items:center; gap:8px;"><i class="fa-solid fa-circle" style="font-size:0.4rem;"></i> <span data-i18n="priv_toc_7">7. Terms of Service</span></a>
+<a href="#contact-privacy" style="color:var(--purple-600); font-size:0.875rem; display:flex; align-items:center; gap:8px;"><i class="fa-solid fa-circle" style="font-size:0.4rem;"></i> <span data-i18n="priv_toc_8">8. Contact Us</span></a>
+</div>
+</div>
+<!-- Introduction -->
+<div style="background:linear-gradient(135deg, rgba(124,58,237,0.06), rgba(6,182,212,0.04)); border:1px solid rgba(124,58,237,0.15); border-radius:var(--radius-lg); padding:24px; margin-bottom:48px;">
+<p style="color:var(--gray-700); line-height:1.75; margin:0;" data-i18n="priv_intro_txt">
+            Dargol Logistics ("we", "our", "us") is committed to protecting the personal information of our clients, customers, and website visitors. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our services or visit our website. Please read this policy carefully. If you disagree with its terms, please discontinue use of our services.
+          </p>
+</div>
+<div class="privacy-section" id="data-collection">
+<h2 data-i18n="priv_s1_title"><i class="fa-solid fa-database"></i> 1. Information We Collect</h2>
+<p data-i18n="priv_s1_desc">We collect information you provide directly to us when you use our services:</p>
+<ul>
+<li><strong data-i18n="priv_s1_li1_str">Personal Identification:</strong> <span data-i18n="priv_s1_li1_txt">Full name, email address, phone number (WhatsApp), and physical address for delivery purposes.</span></li>
+<li><strong data-i18n="priv_s1_li2_str">Shipment Information:</strong> <span data-i18n="priv_s1_li2_txt">Package contents, weight, dimensions, declared value, origin and destination addresses, and Bill of Lading details.</span></li>
+<li><strong data-i18n="priv_s1_li3_str">Financial Information:</strong> <span data-i18n="priv_s1_li3_txt">Payment records (we do not store full card details; payments are processed through secure third-party providers).</span></li>
+<li><strong data-i18n="priv_s1_li4_str">Communication Records:</strong> <span data-i18n="priv_s1_li4_txt">WhatsApp messages, emails, and contact form submissions for customer support purposes.</span></li>
+<li><strong data-i18n="priv_s1_li5_str">Website Usage Data:</strong> <span data-i18n="priv_s1_li5_txt">IP address, browser type, pages visited, and time spent on pages (via analytics tools).</span></li>
+</ul>
+</div>
+<div class="privacy-section" id="data-use">
+<h2 data-i18n="priv_s2_title"><i class="fa-solid fa-magnifying-glass"></i> 2. How We Use Your Information</h2>
+<p data-i18n="priv_s2_desc">We use the information we collect to:</p>
+<ul>
+<li data-i18n="priv_s2_li1">Process and manage your shipment bookings and deliveries</li>
+<li data-i18n="priv_s2_li2">Provide real-time shipment tracking updates</li>
+<li data-i18n="priv_s2_li3">Handle customs documentation and clearance on your behalf</li>
+<li data-i18n="priv_s2_li4">Send order confirmations, tracking notifications, and delivery alerts via WhatsApp, SMS, and email</li>
+<li data-i18n="priv_s2_li5">Respond to customer service inquiries and resolve disputes</li>
+<li data-i18n="priv_s2_li6">Comply with UAE and Iraq customs and legal requirements</li>
+<li data-i18n="priv_s2_li7">Improve our services, website, and mobile application</li>
+<li data-i18n="priv_s2_li8">Send promotional offers and logistics news (with your consent)</li>
+</ul>
+</div>
+<div class="privacy-section" id="data-sharing">
+<h2 data-i18n="priv_s3_title"><i class="fa-solid fa-share-nodes"></i> 3. Data Sharing &amp; Disclosure</h2>
+<p data-i18n="priv_s3_desc1">We do not sell your personal data. We may share your information with:</p>
+<ul>
+<li><strong data-i18n="priv_s3_li1_str">Customs Authorities:</strong> <span data-i18n="priv_s3_li1_txt">UAE Federal Authority for Identity &amp; Citizenship, Iraqi General Customs Authority — as legally required for cargo clearance.</span></li>
+<li><strong data-i18n="priv_s3_li2_str">Logistics Partners:</strong> <span data-i18n="priv_s3_li2_txt">Airlines, trucking companies, and port operators involved in the physical transport of your goods (limited to what is necessary for delivery).</span></li>
+<li><strong data-i18n="priv_s3_li3_str">Insurance Providers:</strong> <span data-i18n="priv_s3_li3_txt">For cargo insurance claims processing.</span></li>
+<li><strong data-i18n="priv_s3_li4_str">Legal Compliance:</strong> <span data-i18n="priv_s3_li4_txt">When required by law, court order, or regulatory authority in UAE or Iraq.</span></li>
+</ul>
+<p data-i18n="priv_s3_desc2">All third parties are contractually obligated to protect your data to the same standard we apply.</p>
+</div>
+<div class="privacy-section" id="cargo-liability">
+<h2 data-i18n="priv_s4_title"><i class="fa-solid fa-box-open"></i> 4. Cargo Liability &amp; Insurance</h2>
+<p data-i18n="priv_s4_desc">Dargol Logistics cargo liability terms:</p>
+<ul>
+<li><strong data-i18n="priv_s4_li1_str">Standard Coverage:</strong> <span data-i18n="priv_s4_li1_txt">All shipments are covered for loss or damage up to the declared value, subject to our Standard Cargo Insurance.</span></li>
+<li><strong data-i18n="priv_s4_li2_str">Prohibited Items:</strong> <span data-i18n="priv_s4_li2_txt">Dargol Logistics does not accept illegal goods, currency, weapons, or items banned under UAE or Iraqi law. Discovery of such items will result in immediate reporting to authorities and forfeiture.</span></li>
+<li><strong data-i18n="priv_s4_li3_str">Declared Value:</strong> <span data-i18n="priv_s4_li3_txt">Clients are responsible for accurately declaring the value of their shipment. Underdeclaration may affect insurance claims.</span></li>
+<li><strong data-i18n="priv_s4_li4_str">Customs Compliance:</strong> <span data-i18n="priv_s4_li4_txt">Dargol Logistics acts as a customs broker on your behalf. Clients are ultimately responsible for ensuring goods are legally importable under Iraqi law.</span></li>
+<li><strong data-i18n="priv_s4_li5_str">Damage Claims:</strong> <span data-i18n="priv_s4_li5_txt">All damage claims must be reported within 7 days of delivery with photographic evidence.</span></li>
+<li><strong data-i18n="priv_s4_li6_str">Force Majeure:</strong> <span data-i18n="priv_s4_li6_txt">Dargol Logistics is not liable for delays caused by customs inspections, border closures, weather, war, or other events beyond our control.</span></li>
+</ul>
+</div>
+<div class="privacy-section" id="data-security">
+<h2 data-i18n="priv_s5_title"><i class="fa-solid fa-lock"></i> 5. Data Security</h2>
+<p data-i18n="priv_s5_desc1">We implement appropriate technical and organizational measures to protect your personal information including:</p>
+<ul>
+<li data-i18n="priv_s5_li1">SSL/TLS encryption for all data transmitted through our website</li>
+<li data-i18n="priv_s5_li2">Secure, access-controlled servers with regular security audits</li>
+<li data-i18n="priv_s5_li3">Staff training on data protection and privacy obligations</li>
+<li data-i18n="priv_s5_li4">Data retention policies — personal data is deleted after 5 years unless legally required to be kept longer</li>
+</ul>
+<p data-i18n="priv_s5_desc2">Despite our best efforts, no method of transmission over the Internet is 100% secure. If you believe your data has been compromised, please contact us immediately.</p>
+</div>
+<div class="privacy-section" id="cookies">
+<h2 data-i18n="priv_s6_title"><i class="fa-solid fa-cookie-bite"></i> 6. Cookies &amp; Tracking</h2>
+<p data-i18n="priv_s6_desc1">Our website uses cookies to enhance your browsing experience. Types of cookies we use:</p>
+<ul>
+<li><strong data-i18n="priv_s6_li1_str">Essential Cookies:</strong> <span data-i18n="priv_s6_li1_txt">Required for the website to function correctly (e.g., session management, language preferences).</span></li>
+<li><strong data-i18n="priv_s6_li2_str">Analytics Cookies:</strong> <span data-i18n="priv_s6_li2_txt">Help us understand how visitors interact with our website (aggregated, non-personal data).</span></li>
+<li><strong data-i18n="priv_s6_li3_str">Marketing Cookies:</strong> <span data-i18n="priv_s6_li3_txt">Used to show relevant advertisements (optional; can be disabled).</span></li>
+</ul>
+<p data-i18n="priv_s6_desc2">You can control cookies through your browser settings. Disabling essential cookies may affect website functionality.</p>
+</div>
+<div class="privacy-section" id="terms">
+<h2 data-i18n="priv_s7_title"><i class="fa-solid fa-file-contract"></i> 7. Terms of Service</h2>
+<p data-i18n="priv_s7_desc1">By using Dargol Logistics services, you agree to:</p>
+<ul>
+<li data-i18n="priv_s7_li1">Provide accurate and complete information for all shipment bookings</li>
+<li data-i18n="priv_s7_li2">Pay all applicable freight charges, customs duties, and taxes</li>
+<li data-i18n="priv_s7_li3">Not ship prohibited or illegal items as defined under UAE and Iraqi law</li>
+<li data-i18n="priv_s7_li4">Comply with all relevant import/export regulations of the UAE and Republic of Iraq</li>
+<li data-i18n="priv_s7_li5">Not hold Dargol Logistics liable for delays or losses caused by customs authorities or force majeure events</li>
+<li data-i18n="priv_s7_li6">Allow Dargol Logistics to open and inspect any package if required by customs authorities</li>
+</ul>
+<p data-i18n="priv_s7_desc2">These terms are governed by the laws of the United Arab Emirates. Any disputes shall be subject to the jurisdiction of UAE courts or, by mutual agreement, arbitration.</p>
+</div>
+<div class="privacy-section" id="contact-privacy">
+<h2 data-i18n="priv_s8_title"><i class="fa-solid fa-envelope"></i> 8. Contact Us About Privacy</h2>
+<p data-i18n="priv_s8_desc1">If you have questions about this Privacy Policy, your personal data, or wish to exercise your rights (access, correction, deletion), please contact us:</p>
+<ul>
+<li><strong data-i18n="priv_s8_li1">Dubai Office:</strong> <a href="tel:+971504157900" style="color:var(--purple-600);">+971 50 415 7900</a></li>
+<li><strong data-i18n="priv_s8_li2">Erbil Office:</strong> <a href="tel:+9647513077900" style="color:var(--purple-600);">+964 751 307 7900</a></li>
+<li><strong data-i18n="priv_s8_li3">WhatsApp:</strong> <a href="https://wa.me/971504157900" style="color:var(--purple-600);" target="_blank">wa.me/971504157900</a></li>
+</ul>
+<p data-i18n="priv_s8_desc2">We aim to respond to all privacy-related inquiries within 5 business days.</p>
+</div>
+<div style="background:linear-gradient(135deg, rgba(124,58,237,0.06), rgba(6,182,212,0.04)); border:1px solid rgba(124,58,237,0.15); border-radius:var(--radius-lg); padding:24px; margin-top:48px;">
+<p style="font-size:0.85rem; color:var(--gray-500); line-height:1.7; margin:0;">
+<strong style="color:var(--gray-800);" data-i18n="priv_footer_str">Policy Updates:</strong> <span data-i18n="priv_footer_txt">Dargol Logistics reserves the right to update this Privacy Policy at any time. Changes will be posted on this page with an updated revision date. Your continued use of our services after changes constitutes acceptance of the updated policy.</span>
+          </p>
+</div>
+</div>
+</div>
+</section>
+<footer class="footer">
+<div class="footer__main container">
+<div class="footer__brand">
+<img alt="Dargol Logistics" class="footer__logo" src="images/dargollogistics.PNG"/>
+<p data-i18n="footer_about">Your trusted logistics partner between the UAE and Iraq.</p>
+<div class="footer__socials">
+<a href="https://wa.me/971504157900" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+<a href="https://www.facebook.com/share/1GXfdihBxV/?mibextid=wwXIfr" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+<a href="https://www.instagram.com/dargollogistics?igsh=M21uc2piYWtsaDI0" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+</div>
+</div>
+<div class="footer__links">
+<h4 data-i18n="footer_quick">Quick Links</h4>
+<ul>
+<li><a data-i18n="nav_home" href="index.html">Home</a></li>
+<li><a data-i18n="nav_about" href="about.html">About Us</a></li>
+<li><a data-i18n="nav_services" href="services.html">Services</a></li>
+<li><a href="tracking.html"><i class="fa-solid fa-mobile-screen"></i> Get the App</a></li>
+<li><a data-i18n="nav_contact" href="contact.html">Contact</a></li>
+</ul>
+</div>
+<div class="footer__contact">
+<h4 data-i18n="footer_contact">Contact Us</h4>
+<div class="footer__contact-item"><i class="fa-solid fa-location-dot"></i><span data-i18n="footer_addr1">Dubai, UAE</span></div>
+<div class="footer__contact-item"><i class="fa-solid fa-location-dot"></i><span data-i18n="footer_addr2">Gazna Road, Erbil, Iraq</span></div>
+<a class="footer__contact-item footer__contact-item--link" href="tel:+971504157900"><i class="fa-solid fa-phone"></i><span>+971 50 415 7900</span></a>
+</div>
+</div>
+<div class="footer__bottom">
+<div class="container">
+<p>© 2026 Dargol Logistics. All rights reserved.</p>
+<div class="footer__bottom-links"><a href="privacy.html">Privacy Policy</a><a href="survey.html">App Survey</a></div>
+</div>
+</div>
+</footer>
+<button class="back-to-top" id="backToTop" onclick="scrollToTop()"><i class="fa-solid fa-chevron-up"></i></button>
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
+
+

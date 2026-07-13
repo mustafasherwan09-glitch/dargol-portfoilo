@@ -1,0 +1,255 @@
+﻿<!DOCTYPE html>
+
+<html dir="ltr" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Blog – Dargol Logistics | Freight News &amp; Updates</title>
+<meta content="Latest news, logistics tips, customs regulations, and promotional offers from Dargol Logistics — your Dubai to Erbil freight specialists." name="description"/>
+<link href="dargollogistics.PNG" rel="icon" type="image/png"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;family=Outfit:wght@300;400;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+</link></link></head>
+<body class="page-blog" data-lang="en">
+<div class="side-overlay" id="sideOverlay" onclick="closeSideMenu()"></div>
+<aside class="side-menu" id="sideMenu">
+<div class="side-menu__header">
+<img alt="Dargol Logistics" class="side-menu__logo" src="images/dargollogistics.PNG"/>
+<button class="side-menu__close" onclick="closeSideMenu()"><i class="fa-solid fa-xmark"></i></button>
+</div>
+<nav class="side-menu__nav">
+<a class="side-nav-link" data-i18n="nav_home" href="index.html"><i class="fa-solid fa-house"></i><span>Home</span></a>
+<a class="side-nav-link" data-i18n="nav_about" href="about.html"><i class="fa-solid fa-building"></i><span>About Us</span></a>
+<a class="side-nav-link" data-i18n="nav_services" href="services.html"><i class="fa-solid fa-truck-fast"></i><span>Services</span></a>
+<a class="side-nav-link" data-i18n="nav_download" href="download.html"><i class="fa-solid fa-mobile-screen"></i><span>Download App</span></a>
+<a class="side-nav-link active" data-i18n="nav_blog" href="blog.html"><i class="fa-solid fa-newspaper"></i><span>Blog</span></a>
+<a class="side-nav-link" data-i18n="nav_contact" href="contact.html"><i class="fa-solid fa-envelope"></i><span>Get In Touch</span></a>
+<a class="side-nav-link" data-i18n="nav_survey" href="survey.html"><i class="fa-solid fa-clipboard-list"></i><span>App Survey</span></a>
+<a class="side-nav-link" data-i18n="nav_privacy" href="privacy.html"><i class="fa-solid fa-shield-halved"></i><span>Privacy Policy</span></a>
+</nav>
+<div class="side-menu__contacts">
+<a class="wa-link" href="https://wa.me/971504157900" target="_blank"><i class="fa-brands fa-whatsapp"></i> +971 50 415 7900</a>
+<a class="wa-link" href="https://wa.me/9647513077900" target="_blank"><i class="fa-brands fa-whatsapp"></i> +964 751 307 7900</a>
+</div>
+    <!-- Language Switcher — bottom of side menu, text-only -->
+    <div class="lang-switcher" id="sideLangSwitcher">
+      <p class="lang-switcher__label" data-i18n="change_language">Language</p>
+      <div class="lang-switcher__buttons">
+        <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">English</button>
+        <button class="lang-btn" data-lang="ku" onclick="switchLang('ku')">کوردی</button>
+        <button class="lang-btn" data-lang="ar" onclick="switchLang('ar')">العربية</button>
+      </div>
+    </div>
+</aside>
+<header class="navbar" id="mainNavbar">
+<div class="navbar__inner container">
+<a class="navbar__brand" href="index.html">
+<img alt="Dargol Logistics" class="navbar__logo" src="images/dargollogistics.PNG"/>
+<span class="navbar__name">DARGOL <span>LOGISTICS</span></span>
+</a>
+<nav class="navbar__links">
+<a class="nav-link" data-i18n="nav_home" href="index.html">Home</a>
+<a class="nav-link" data-i18n="nav_about" href="about.html">About</a>
+<a class="nav-link" data-i18n="nav_services" href="services.html">Services</a>
+<a class="nav-link" data-i18n="nav_download" href="download.html">Download App</a>
+<a class="nav-link active" data-i18n="nav_blog" href="blog.html">Blog</a>
+<a class="nav-link" data-i18n="nav_contact" href="contact.html">Contact</a>
+</nav>
+<div class="navbar__actions">
+<a class="btn btn--primary btn--sm" data-i18n="nav_get_app" href="download.html"><i class="fa-solid fa-mobile-screen"></i> Get the App</a>
+        <div class="lang-dropdown" id="langDropdown">
+          <button class="lang-dropdown__toggle" id="langDropdownToggle" onclick="toggleLangDropdown()" aria-label="Change language">
+            <span id="langDropdownLabel">English</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="lang-dropdown__menu" id="langDropdownMenu">
+            <button class="lang-dropdown__item active" data-lang="en" onclick="switchLang('en');closeLangDropdown()">English</button>
+            <button class="lang-dropdown__item" data-lang="ku" onclick="switchLang('ku');closeLangDropdown()">کوردی</button>
+            <button class="lang-dropdown__item" data-lang="ar" onclick="switchLang('ar');closeLangDropdown()">العربية</button>
+          </div>
+        </div>
+<button class="hamburger" onclick="openSideMenu()"><span></span><span></span><span></span></button>
+</div>
+</div>
+</header>
+<!-- Page Hero -->
+<section class="page-hero">
+<div class="container page-hero__content">
+<div class="page-hero__tag"><i class="fa-solid fa-newspaper"></i> <span data-i18n="blog_hero_tag">Dargol Blog</span></div>
+<h1 class="page-hero__title" data-i18n="blog_hero_title">News &amp; Insights</h1>
+<p class="page-hero__subtitle" data-i18n="blog_hero_subtitle">Stay updated with logistics tips, customs regulations, shipping news, and exclusive offers from Dargol Logistics.</p>
+</div>
+</section>
+<!-- Blog Grid -->
+<section class="section" style="background:var(--off-white);">
+<div class="container">
+<!-- Featured Post -->
+<div class="reveal" style="background:var(--white); border:1px solid var(--gray-200); border-radius:var(--radius-2xl); overflow:hidden; margin-bottom:48px; display:grid; grid-template-columns:1.2fr 1fr; box-shadow:var(--shadow-md);">
+<div style="position:relative; overflow:hidden; height:380px;">
+<img alt="Featured Blog Post" src="images/transport-logistics-products.jpg" style="width:100%; height:100%; object-fit:cover;"/>
+<div style="position:absolute; top:20px; left:20px; background:var(--gradient-primary); color:var(--white); font-size:0.72rem; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; padding:4px 12px; border-radius:var(--radius-full);">Featured</div>
+</div>
+<div style="padding:48px 40px; display:flex; flex-direction:column; justify-content:center;">
+<div style="font-size:0.78rem; color:var(--gray-400); margin-bottom:12px;">July 10, 2026  ·  5 min read</div>
+<h2 style="font-family:var(--font-display); font-size:1.6rem; font-weight:800; color:var(--gray-900); margin-bottom:16px; line-height:1.3;">2026 Iraq Customs Regulations: What Every Shipper Needs to Know</h2>
+<p style="color:var(--gray-500); line-height:1.75; margin-bottom:28px;">Major changes to Iraq's import customs rules take effect this year. Dargol Logistics breaks down what's changed, what you need to declare, and how we handle it all for you.</p>
+<div style="display:flex; align-items:center; gap:16px;">
+<div style="width:40px; height:40px; border-radius:50%; background:var(--gradient-primary); display:flex; align-items:center; justify-content:center; color:var(--white); font-weight:700; font-size:0.85rem;">DL</div>
+<div>
+<div style="font-weight:600; font-size:0.9rem; color:var(--gray-800);">Dargol Logistics Team</div>
+<div style="font-size:0.78rem; color:var(--gray-400);">Customs &amp; Compliance</div>
+</div>
+</div>
+<a class="btn btn--primary" href="#" style="margin-top:28px; align-self:flex-start;">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+</div>
+</div>
+<!-- Blog Grid -->
+<div class="blog-grid">
+<!-- Post 1 -->
+<div class="blog-card reveal">
+<div class="blog-card__img">
+<img alt="Shein Delivery Guide" src="images/transport-logistics-products.jpg"/>
+<div class="blog-card__category">Shein Delivery</div>
+</div>
+<div class="blog-card__content">
+<div class="blog-card__meta">July 5, 2026  ·  4 min read</div>
+<div class="blog-card__title">Complete Guide: How to Order Shein and Ship to Erbil</div>
+<div class="blog-card__excerpt">Step-by-step instructions for using our Dubai warehouse address for your Shein orders and getting packages delivered to Erbil in days.</div>
+<a class="blog-card__link" href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
+</div>
+</div>
+<!-- Post 2 -->
+<div class="blog-card reveal reveal--delay-2">
+<div class="blog-card__img">
+<img alt="Auto Parts Shipping" src="images/transport-logistics-products.jpg"/>
+<div class="blog-card__category">Auto Parts</div>
+</div>
+<div class="blog-card__content">
+<div class="blog-card__meta">June 28, 2026  ·  6 min read</div>
+<div class="blog-card__title">How We Safely Transport Auto Parts from Dubai to Erbil</div>
+<div class="blog-card__excerpt">Our specialized auto parts packaging process explained — from industrial foam wrapping to moisture protection and insurance claims procedures.</div>
+<a class="blog-card__link" href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
+</div>
+</div>
+<!-- Post 3 -->
+<div class="blog-card reveal reveal--delay-4">
+<div class="blog-card__img">
+<img alt="Air vs Land Freight" src="images/transport-logistics-products.jpg"/>
+<div class="blog-card__category">Logistics Tips</div>
+</div>
+<div class="blog-card__content">
+<div class="blog-card__meta">June 15, 2026  ·  5 min read</div>
+<div class="blog-card__title">Air vs. Land Freight: Which Is Right for Your Shipment?</div>
+<div class="blog-card__excerpt">A detailed comparison of our air freight and land freight services. Learn when to choose speed over cost and vice versa for your specific cargo.</div>
+<a class="blog-card__link" href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
+</div>
+</div>
+<!-- Post 4 -->
+<div class="blog-card reveal">
+<div class="blog-card__img">
+<img alt="Container Shipping" src="images/transport-logistics-products.jpg"/>
+<div class="blog-card__category">Sea Freight</div>
+</div>
+<div class="blog-card__content">
+<div class="blog-card__meta">June 8, 2026  ·  7 min read</div>
+<div class="blog-card__title">FCL vs LCL Container Shipping: Complete Breakdown for Iraq Importers</div>
+<div class="blog-card__excerpt">Full container load versus groupage shipping — costs, timelines, and when each makes sense for businesses importing to Iraq from Jebel Ali.</div>
+<a class="blog-card__link" href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
+</div>
+</div>
+<!-- Post 5 -->
+<div class="blog-card reveal reveal--delay-2">
+<div class="blog-card__img">
+<img alt="Summer Promotion" src="images/transport-logistics-products.jpg"/>
+<div class="blog-card__category">Promotions</div>
+</div>
+<div class="blog-card__content">
+<div class="blog-card__meta">May 20, 2026  ·  2 min read</div>
+<div class="blog-card__title">🎉 Summer 2026: Get 15% Off Land Freight for Orders Over 200kg</div>
+<div class="blog-card__excerpt">Limited-time offer! Book a land freight shipment of 200kg or more this summer and receive 15% off your total shipping cost. Contact us to claim.</div>
+<a class="blog-card__link" href="contact.html">Claim Offer <i class="fa-solid fa-arrow-right"></i></a>
+</div>
+</div>
+<!-- Post 6 -->
+<div class="blog-card reveal reveal--delay-4">
+<div class="blog-card__img">
+<img alt="Tracking App" src="images/transport-logistics-products.jpg"/>
+<div class="blog-card__category">Technology</div>
+</div>
+<div class="blog-card__content">
+<div class="blog-card__meta">May 10, 2026  ·  3 min read</div>
+<div class="blog-card__title">Coming Soon: The Dargol Logistics Mobile App</div>
+<div class="blog-card__excerpt">We're building a dedicated mobile app for iOS and Android! Real-time GPS tracking, WhatsApp integration, and instant quotes. Share your feature wishlist in our survey.</div>
+<a class="blog-card__link" href="survey.html">Take Survey <i class="fa-solid fa-arrow-right"></i></a>
+</div>
+</div>
+</div>
+<!-- Load More -->
+<div style="text-align:center; margin-top:48px;">
+<button class="btn btn--glass" onclick="showToast('More articles coming soon!')" style="background:var(--white); color:var(--gray-700); border:1px solid var(--gray-200);">
+          <span data-i18n="blog_load_more">Load More Articles</span> <i class="fa-solid fa-rotate-right"></i>
+</button>
+</div>
+</div>
+</section>
+<!-- Newsletter -->
+<section class="section" style="background:var(--gray-900);">
+<div class="container" style="max-width:640px;">
+<div style="text-align:center;">
+<div class="section-tag" style="background:rgba(124,58,237,0.2); border-color:rgba(124,58,237,0.35); color:var(--purple-300);" data-i18n="blog_news_tag">Newsletter</div>
+<h2 style="font-family:var(--font-display); font-size:2rem; font-weight:800; color:var(--white); margin-bottom:12px;" data-i18n="blog_news_title">Stay in the Loop</h2>
+<p style="color:rgba(255,255,255,0.6); margin-bottom:32px;" data-i18n="blog_news_desc">Get logistics tips, customs updates, and exclusive Dargol offers straight to your inbox.</p>
+<div style="display:flex; gap:12px; background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.12); border-radius:var(--radius-full); padding:8px 8px 8px 20px;">
+<input placeholder="Enter your email address" data-i18n-placeholder="blog_news_placeholder" style="flex:1; background:none; border:none; outline:none; color:var(--white); font-size:0.95rem;" type="email"/>
+<button class="btn btn--primary" onclick="showToast('Subscribed! You\'ll receive our next newsletter. 📧')" data-i18n="blog_news_btn">
+            Subscribe
+          </button>
+</div>
+</div>
+</div>
+</section>
+<footer class="footer">
+<div class="footer__main container">
+<div class="footer__brand">
+<img alt="Dargol Logistics" class="footer__logo" src="images/dargollogistics.PNG"/>
+<p data-i18n="footer_about">Your trusted logistics partner between the UAE and Iraq.</p>
+<div class="footer__socials">
+<a href="https://wa.me/971504157900" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+<a href="https://www.facebook.com/share/1GXfdihBxV/?mibextid=wwXIfr" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+<a href="https://www.instagram.com/dargollogistics?igsh=M21uc2piYWtsaDI0" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+</div>
+</div>
+<div class="footer__links">
+<h4 data-i18n="footer_quick">Quick Links</h4>
+<ul>
+<li><a data-i18n="nav_home" href="index.html">Home</a></li>
+<li><a data-i18n="nav_about" href="about.html">About Us</a></li>
+<li><a data-i18n="nav_services" href="services.html">Services</a></li>
+<li><a data-i18n="nav_download" href="download.html">Download App</a></li>
+<li><a data-i18n="nav_contact" href="contact.html">Contact</a></li>
+</ul>
+</div>
+<div class="footer__contact">
+<h4 data-i18n="footer_contact">Contact Us</h4>
+<div class="footer__contact-item"><i class="fa-solid fa-location-dot"></i><span data-i18n="footer_addr1">Dubai, UAE</span></div>
+<div class="footer__contact-item"><i class="fa-solid fa-location-dot"></i><span data-i18n="footer_addr2">Gazna Road, Erbil, Iraq</span></div>
+<a class="footer__contact-item footer__contact-item--link" href="tel:+971504157900"><i class="fa-solid fa-phone"></i><span>+971 50 415 7900</span></a>
+</div>
+</div>
+<div class="footer__bottom">
+<div class="container">
+<p>© 2026 Dargol Logistics. All rights reserved.</p>
+<div class="footer__bottom-links"><a href="privacy.html">Privacy Policy</a></div>
+</div>
+</div>
+</footer>
+<button class="back-to-top" id="backToTop" onclick="scrollToTop()"><i class="fa-solid fa-chevron-up"></i></button>
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
+
+
