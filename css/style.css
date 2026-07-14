@@ -2451,7 +2451,7 @@ body[dir="rtl"] .timeline-item__dot { left: auto; right: -49px; }
 
   .hero__title { font-size: clamp(2.2rem, 8vw, 3rem); }
 
-  .track-bar__inner { flex-direction: column; gap: 12px; }
+  .track-bar__inner { flex-direction: column; gap: 16px; align-items: center; text-align: center; }
   .track-bar__inner .btn { width: 100%; justify-content: center; }
 
   .services-grid { grid-template-columns: 1fr; }

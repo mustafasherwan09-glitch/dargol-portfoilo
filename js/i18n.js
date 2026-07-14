@@ -418,7 +418,9 @@ const TRANSLATIONS = {
     "surv4_plc1": "Tell us honestly — what's not working well and how can we do better...",
     "surv4_plc2": "Describe a feature that would completely change how you use Dargol...",
     "surv1_plc_name": "Your name...",
-    "surv1_plc_email": "your@email.com"
+    "surv1_plc_email": "your@email.com",
+    "track_app_title": "Track Your Shipments Live",
+    "track_app_desc": "Download the Dargol app — register, track & manage your freight in real time"
   },
   "ku": {
     "nav_home": "سەرەکی",
@@ -834,7 +836,9 @@ const TRANSLATIONS = {
     "priv_footer_str": "نوێکردنەوەکانی سیاسەت:",
     "priv_footer_txt": "دارگۆل مافی خۆیەتی ئەم سیاسەتە لە هەر کاتێکدا نوێ بکاتەوە.",
     "nav_download": "داگرتنی ئەپ",
-    "nav_get_app": "داگرتنی ئەپ"
+    "nav_get_app": "داگرتنی ئەپ",
+    "track_app_title": "چاودێری بارەکانت بکە بە شێوەی ڕاستەوخۆ",
+    "track_app_desc": "ئەپی دارگۆل دابەزێنە - خۆت تۆمار بکە، چاودێری و بەڕێوەبردنی بارەکانت بکە لە کاتی ڕاستەقینەدا"
   },
   "ar": {
     "nav_home": "الرئيسية",
@@ -1250,7 +1254,9 @@ const TRANSLATIONS = {
     "priv_footer_str": "تحديثات السياسة:",
     "priv_footer_txt": "تحتفظ دارجول بالحق في تحديث هذه السياسة في أي وقت.",
     "nav_download": "تحميل التطبيق",
-    "nav_get_app": "تحميل التطبيق"
+    "nav_get_app": "تحميل التطبيق",
+    "track_app_title": "تتبع شحناتك مباشرة",
+    "track_app_desc": "حمل تطبيق دارگول - سجل، تتبع وأدر شحناتك في الوقت الفعلي"
   }
 };
 
