@@ -520,9 +520,9 @@ body[dir="rtl"] .side-menu.is-open { left: 0; }
    SIDE MENU — Language Switcher (bottom, text-only)
    ──────────────────────────────────────────── */
 .lang-switcher {
-  padding: 20px 20px;
+  padding: 14px 20px;
   border-top: 1px solid var(--gray-200);
-  margin-top: auto;
+  border-bottom: 1px solid var(--gray-200);
 }
 
 .lang-switcher__label {
@@ -628,11 +628,11 @@ body[dir="rtl"] .side-nav-link::after { right: auto; left: 16px; content: '‹';
 
 /* ──────── SIDE CONTACTS ──────── */
 .side-menu__contacts {
-  padding: 20px 24px;
-  border-top: 1px solid var(--gray-200);
+  padding: 16px 24px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 10px;
+  margin-top: auto;
 }
 
 .wa-link {
