@@ -489,10 +489,11 @@ body[dir="rtl"] .side-menu.is-open { left: 0; }
 }
 
 .lang-dropdown__item {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
   width: 100%;
   padding: 11px 18px;
-  text-align: left;
   background: transparent;
   border: none;
   font-size: 0.875rem;
@@ -514,7 +515,6 @@ body[dir="rtl"] .side-menu.is-open { left: 0; }
 }
 /* RTL: flip dropdown to open left-aligned so it doesn't clip off-screen */
 [dir="rtl"] .lang-dropdown__menu { right: auto; left: 0; }
-[dir="rtl"] .lang-dropdown__item { text-align: right; }
 
 /* ────────────────────────────────────────────
    SIDE MENU — Language Switcher (bottom, text-only)
