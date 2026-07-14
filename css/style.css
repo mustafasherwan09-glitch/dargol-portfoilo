@@ -514,7 +514,7 @@ body[dir="rtl"] .side-menu.is-open { left: 0; }
   font-weight: 700;
 }
 /* RTL: flip dropdown to open left-aligned so it doesn't clip off-screen */
-[dir="rtl"] .lang-dropdown__menu { right: auto; left: 0; }
+/* Removed right: auto; left: 0; because navbar is visually LTR even in RTL mode */
 
 /* ────────────────────────────────────────────
    SIDE MENU — Language Switcher (bottom, text-only)
@@ -2498,7 +2498,6 @@ body[dir="rtl"] .back-to-top { right: auto; left: 32px; }
 body[dir="rtl"] .toast { right: auto; left: 32px; }
 
 /* RTL: lang dropdown position */
-[dir="rtl"] .lang-dropdown__menu { right: auto; left: 0; }
 [dir="rtl"] .lang-dropdown__item { text-align: right; }
 [dir="rtl"] .lang-dropdown__toggle { flex-direction: row-reverse; }
 
