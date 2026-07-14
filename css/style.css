@@ -3717,4 +3717,22 @@ body[dir="rtl"] .toast { right: auto; left: 32px; }
   div[style*="display: grid"] {
     grid-template-columns: 1fr !important;
   }
+  
+  /* Fix track bar squishing on RTL by forcing column */
+  [dir="rtl"] .track-bar__inner {
+    flex-direction: column !important;
+  }
+  
+  /* Fix home stats overflowing column width */
+  .stat-card__num {
+    font-size: 2.2rem !important;
+  }
+  
+  /* Fix about us stats wrapping awkwardly */
+  div[style*="min-width:120px"], 
+  div[style*="min-width: 120px"] {
+    flex: 1 !important;
+    min-width: 90px !important;
+    padding: 16px !important;
+  }
 }
